@@ -1,0 +1,41 @@
+.logo{
+  max-width: 70px;
+}
+@include xxl{
+  .logo{
+    max-width: 100%;
+  }
+}
+.nav-width{
+  width: 100% !important;
+}
+@include xxl{
+  .nav-width{
+    width: 248px !important;
+  }
+}
+@include xxl{
+  .nav-border{
+    border: 2px solid $gray-80;
+    border-radius: 8px;
+  }
+}
+.btn-border-top{
+  border-top: 2px solid $gray-80;
+}
+.nav-btn-hover{
+  &:hover{
+    border-top: 2px solid $gray-80;
+  }
+}
+.nav-position{
+  position: fixed;
+  top: 0;
+}
+
+@include xxl{
+  .nav-position{
+    top: 64px;
+    left: 32px;
+  }
+}

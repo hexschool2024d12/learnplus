@@ -1,0 +1,30 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "./utils/variables";
+@import "../../node_modules/bootstrap";
+
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-size":
+      map-merge(
+        map-get($utilities, "font-size"),
+        (
+          responsive: true,
+        )
+      ),
+  )
+);
+@import "bootstrap/scss/utilities/api";
+
+@import "/assets/scss/utils/utilities";
+@import "/assets/scss/layout/base";
+@import "/assets/scss/layout/utilities-own";
+@import "/assets/scss/layout/icon";
+
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+@import "/assets/scss/layout/card";
+
+@import "./pages/index.scss";
+@import "/assets/scss/pages/personal";
