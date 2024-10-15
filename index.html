@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="zh-hant-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>學識伴LearnPlus++ : 首頁</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script type="module" crossorigin src="/learnplus/assets/main-ee979b57.js"></script>
+    <link rel="stylesheet" href="/learnplus/assets/main-bc7a35ab.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-xxl nav-border nav-position bg-white rounded-bottom-3 py-0 nav-width zindex-1000">
+    <div class="d-flex flex-column w-100">
+        <div class="d-flex justify-content-between">
+            <h1 class="mx-xxl-auto pt-xxl-11 pb-xxl-6"><a class="navbar-brand m-0" href="index.html"><img src="/learnplus/assets/Logo-54f9b18f.png" alt="logo" class="logo"></a></h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav flex-xxl-column text-center fw-medium w-100">
+                <li>
+                    <form action="#" class="input-group w-100">
+                        <label for="search" class="input-group-text pe-0 bg-white border-search border-start-0 rounded-0"><i class="bi bi-search text-gray-40"></i></label>
+                        <input type="text" id="search" placeholder="搜尋" class="form-control border-input border-end-0 rounded-0 ps-2">
+                    </form>
+                </li>
+                <li class="nav-item"><a class="nav-link active text-gray-60 pt-6"  href="#">精選文章</a></li>
+                <li class="nav-item"><a class="nav-link text-gray-60" href="#">課程專區</a></li>
+                <li class="nav-item"><a class="nav-link text-gray-60" href="#">我的課程</a></li>
+                <li class="nav-item"><a class="nav-link text-gray-60" href="personal.html">關於我們</a></li>
+                <li><a href="#"><img src="/learnplus/assets/sign in-5f89d714.png" alt="sign in" class="pt-2 pb-6"></a></li>
+                <button type="button" class="btn btn-primary nav-btn-hover btn-border-top rounded-0 rounded-bottom-3 w-100 fs-5 fw-medium">登入 / 註冊</button>
+            </ul>
+        </div>
+    </div>
+  </nav>
+    <!-- banner -->
+    <section class="banner-bg">
+      <div class="container d-flex jutify-content-center align-items-center">
+        <div class="mx-auto d-flex flex-column align-items-center slogan-position">
+          <h1 class="text-success position-relative slogan me-128 mb-2" data-stroke="共學共成">共學共成</h1>
+          <h1 class="text-success position-relative slogan ms-96" data-stroke="知識無界">知識無界</h1>
+          <h4 class="mt-4 ms-sm-auto fs-20-24">團隊的力量，是學習的捷徑！</h4>
+        </div>
+      </div>
+    </section>
+    <!-- web intro -->
+    <section>
+    <div class="container">
+      <div class="py-9 py-lg-15">
+        <div class="row ">
+          <div class="col-lg-10 mx-auto">
+            <div class="row flex-column flex-lg-row">
+              <div class="col-lg-7">
+                <div class="d-flex flex-column h-100">
+                  <div class="my-auto">
+                    <h3 class="mb-2 mb-lg-5 fs-lg-1">學識伴</h3>
+                    <a href="#index.html"><img src="data:image/png;base64,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" alt="logo-text" class="d-block mb-5 mb-lg-7 plus"></a>
+                    <p class="fs-lg-3 mb-5">本平台支持不同MBTI人群共同線上學習，促進多樣性交流，增強合作效能，並提供個性化的學習體驗以滿足不同需求。</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="circle-box mx-auto position-relative">
+                  <div class="circle-out circle-position-1 position-absolute bg-white">
+                    <div class="circle-ins d-flex flex-column align-items-center">
+                      <div class="my-auto">
+                        <p class="text-center "><span class="material-symbols-outlined text-primary-dark fs-1">done_outline</span></p>
+                        <h4>深入學習</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="circle-out circle-position-2 position-absolute bg-white">
+                    <div class="circle-ins d-flex flex-column align-items-center">
+                      <div class="my-auto">
+                        <p class="text-center "><span class="material-symbols-outlined text-primary-dark fs-1">done_outline</span></p>
+                        <h4>個性化教學</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="circle-out circle-position-3 position-absolute bg-white">
+                    <div class="circle-ins d-flex flex-column align-items-center">
+                      <div class="my-auto">
+                        <p class="text-center "><span class="material-symbols-outlined text-primary-dark fs-1">done_outline</span></p>
+                        <h4>合作互助</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- teacher -->
+    <section>
+      <div class="container container-fuild">
+        <div class="row">
+          <div class="col-md-10 mx-sm-auto">
+            <div class="mac-border">
+              <div class="d-flex justify-content-between align-items-center mac-header-bg ps-5">
+                <div class="d-flex align-items-center py-7">
+                  <div class="d-flex me-5 me-md-12">
+                    <p class="mac-sign bg-danger me-2 me-md-5"></p>
+                    <p class="mac-sign bg-warning me-2 me-md-5"></p>
+                    <p class="mac-sign bg-success"></p>
+                  </div>
+                  <h5 class="fs-md-4">名師課程</h5>
+                </div>
+                <div class="d-none d-md-block">
+                  <span class="swiper-prev swiper-btn"><i class="bi bi-arrow-left-short arrow-left align-middle fs-2"></i></span>
+                  <span class="swiper-next swiper-btn"><i class="bi bi-arrow-right-short arrow-right align-middle fs-2"></i></span>
+                </div>
+              </div>
+              <div class="swiper teacher-swiper py-7 p-md-11">
+                <div class="swiper-wrapper ps-4 ps-md-0">
+                  <div class="swiper-slide teacher-box">
+                    <div class="">
+                      <div class="position-relative mb-5">
+                        <h4 class="position-absolute text-success rotate mbti-type mbti-p">INFP</h4>
+                        <img src="/learnplus/assets/teacher-1-7478b426.png" alt="teacher-1" class="teacher-image">
+                        
+                      </div>
+                      <div class="d-flex flex-column jutify-content-center px-5">
+                        <h5 class="text-center mb-2">洪琦雯</h5>
+                        <p class="text-center mb-5">視覺設計總監</p>
+                        <a href="#" class="btn btn-outline-primary-dark border-2 text-nowrap">創意視覺傳達 <i class="bi bi-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide teacher-box">
+                    <div class="">
+                      <div class="position-relative mb-5">
+                        <h4 class="position-absolute text-success rotate mbti-type mbti-p">ESFP</h4>
+                        <img src="/learnplus/assets/teacher-2-31f7ff6b.png" alt="teacher-2" class="teacher-image">
+                        
+                      </div>
+                      <div class="d-flex flex-column jutify-content-center px-5">
+                        <h5 class="text-center mb-2">陳靜儀</h5>
+                        <p class="text-center mb-5">銷售分析師</p>
+                        <a href="#" class="btn btn-outline-primary-dark border-2 text-nowrap">數位行銷策略 <i class="bi bi-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide teacher-box">
+                    <div class="">
+                      <div class="position-relative mb-5">
+                        <h4 class="position-absolute text-success rotate mbti-type mbti-p">ESTJ</h4>
+                        <img src="/learnplus/assets/teacher-3-50d9c161.png" alt="teacher-3" class="teacher-image">
+                        
+                      </div>
+                      <div class="d-flex flex-column jutify-content-center px-5">
+                        <h5 class="text-center mb-2">李佳蓉</h5>
+                        <p class="text-center mb-5">資深人資經理</p>
+                        <a href="#" class="btn btn-outline-primary-dark border-2 text-nowrap">人力資源管理 <i class="bi bi-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide teacher-box">
+                    <div class="">
+                      <div class="position-relative mb-5">
+                        <h4 class="position-absolute text-success rotate mbti-type mbti-p">INTJ</h4>
+                        <img src="/learnplus/assets/teacher-4-759b6168.png" alt="teacher-4" class="teacher-image">
+                        
+                      </div>
+                      <div class="d-flex flex-column jutify-content-center px-5">
+                        <h5 class="text-center mb-2">陳靜儀</h5>
+                        <p class="text-center mb-5">銷售分析師</p>
+                        <a href="#" class="btn btn-outline-primary-dark border-2 text-nowrap">數位行銷策略 <i class="bi bi-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide teacher-box">
+                    <div class="">
+                      <div class="position-relative mb-5">
+                        <h4 class="position-absolute text-success rotate mbti-type mbti-p">ENFP</h4>
+                        <img src="/learnplus/assets/teacher-5-54d17857.png" alt="teacher-5" class="teacher-image">
+                        
+                      </div>
+                      <div class="d-flex flex-column jutify-content-center px-5">
+                        <h5 class="text-center mb-2">洪琦雯</h5>
+                        <p class="text-center mb-5">視覺設計總監</p>
+                        <a href="#" class="btn btn-outline-primary-dark border-2 text-nowrap">創意視覺傳達 <i class="bi bi-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- course -->
+    <section>
+      <div class="container">
+        <div class="row pt-9">
+          <div class="col-md-10 mx-md-auto">
+            <div class="course-radius course-head-bg">
+              <div class="position-relative py-5 py-md-8">
+                <h3 class="text-center">為您推薦</h3>
+                <i class="bi bi-arrow-right-short position-absolute top-0 end-0 fs-2 text-gray-80 px-2 px-md-6 py-md-3 swiper-next-btn swiper-btn swiper-radius opacity-75 d-block"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="course-bg course-radius-all">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 mx-md-auto">
+              <div class="swiper course-swiper py-7 py-lg-9 overflow">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="card card-width border-0 position-relative radius-32">
+                      <img src="data:image/png;base64,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" alt="Discount-88" class="dis-position dis-width">
+                      <div class="card-header border-0 position-relative bg-white pt-7 px-7 radius-32">
+                        <img src="/learnplus/assets/course-1-c1766b65.png" alt="course-1" class="card-img">
+                        <form action="#" class="card-icon-position">
+                          <input type="checkbox" id="collect" class="collect-ctrl d-none">
+                          <label for="collect" class="collect-bookmark cursor card-icon-bg me-2"><i class="bi bi-bookmark fs-5"></i></label>
+                          <label for="collect" class="collect-bookmark-fill cursor card-icon-bg me-2"><i class="bi bi-bookmark-fill fs-5"></i></label>
+                          <label for="cart" class="card-icon-bg"><i class="bi bi-cart fs-5"></i></label>
+                        </form>
+                      </div>
+                      <div class="card-body border-0 border-bottom-black px-0 mx-7">
+                        <div class="d-flex">
+                          <p class="tag-pill bg-gray-40 me-2 text-nowrap">語言與文學</p>
+                          <p class="tag-pill tag-03 text-nowrap">直播課程</p>
+                        </div>
+                        <h4 class="mb-2 mt-5"><a href="#" class="text-gray-80 stretched-link">時間管理技巧</a></h4>
+                        <div class="d-flex">
+                          <p class="me-4">講師－高宇琛</p>
+                          <p class="text-primary">ESTP</p>
+                        </div>
+                      </div>
+                      <div class="card-footer border-0 bg-white px-7 pt-5 pb-7 radius-32">
+                        <div class="d-flex justify-content-between">
+                          <h4>NT 899</h4>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFRSURBVHgB3ZNBSsNAFIbfzLSW2hbiyi5zBN25cJEbtF1YcGdukJ1gF9qFgrvcoLqOkCMYwQN4hCyDqwFLoTST50xCxIGYtIML8YdJZpL3PvL+9wLw10WaAobhpY1pa5EHt1I3mdzHdfEUGoSCPcuro1a2oaG18Cxj4OHTlQ8IdnkmhBx1+t3ruhz2IyyYefJWkUxOBtNTsgxeo6o8zcNhMHMEZCNK6AUg1pYmM2MEiCiSx+TsNtKAVuhZnbQXFl4ZSMLXH6tj7vo893BP9B1jmJL0uT3ojdQ2B+4zFknHOZiLs0368gWMJ3MOmM3BVChukvNiPrWmyDEJ5eePYQchwsP79M4tz9ocdlnb3al0xJgKoVWmAYvS4Q22lexuWWol8DdUBbRgWyGxm4FNf8j3UEDeCCSQjw9XhmcZ+vLJeL1cHail9qqr6l0RI8xH7f/oE3GJfBReXXmkAAAAAElFTkSuQmCC" alt="star">
+                            <p class="text-nowrap text-success">4.9 (858)</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card card-width border-0 position-relative radius-32">
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAYxSURBVHgB7VpNbBtFFH520jqhdpSEn8ZFDk6UXNrLpjlwIBGtyiFFlbgQKg6oCYgLUgJcKpULt0TqBTW9VEI0qTi16QEk1HAANSWBW0kuLYdU1CQCh6oKUewQt0ls3je7Y8Ybrz3req0a/Ekrez3Ps++b97Nv3i5RhRCJRKba29szOPj7JFUIdVQBgJzP5zsTbPDT/nofbe+S0dTUFN3Y2PiaPIbnBCW5tpZ9dOmDCL3xchPN3d2kzVSmIiQ9IxiNRptDodAlSW7i/RepraWego111H/4QA5Jv99/K8UgD+AjDwBy6XT6Jn81VHIqVv/aptHPf+fPHZwusiWPrzOozCi7BXXIAaolk6l0WyAQGGBrXy23JctKUJecRCVIFnRRThBDfMFXSR8GaZJTYXPXGB+zpI/Z5eXlK06DBQnyPQv3qyFyAbfkJGwk3WCKCQ47DWppcbK3iXo6GnREyeh8xjU5QC7M4q9bWvILLDfzc6KonJYmRkcjDfSGyGuA5EDvPi3ZDB86BP30H0eNYLWjRrDaUSNY7fj/EkThzB/H6OmH0cxwGsxLUNkVRFFd9HQ20tMG6GSVhNg033QiuYeg2y3PkwD15OR3a0XlEqm0kFVh082R5J7dBO8gFqgC5ACQm/x+jX4Y78r+FufdxL34I1pd26al+GMuvv+m1XVzh/HFaIS6w4GcOYp1BnK0R4OIipCL84Tj0w+EEkDfkSANn2ilsCKLFYfy83eS2MhSFyt1bvBgjkw+QNnT538T39GBC7Me/Tx/d3i/4y5F6mqRNLgP9Bnzy26ffCo5e4MoH946H6PkVlqQAqZ/WhfTXDv70h6Zwb5mCgb8QgZEr52NCsXhbiCDnfw8H+fefEH8r/tQgN6dWOHzg7xFc7d7US2ZyWSmVlZWBEm/G3JzdzbFBCOnnhfK4wBRTC4taiq/I1YeY5CBwiCM/wPf3t6g8esPBDkA33FAplSoujOXIdlcrtclByRTu3knFmOWcsFGM291sVtJ2F0T7orDHoNYKHmduMPOvpCb29wVJKledpx1Ekr/4SBdbHgolDI4TeNiM2wNTNx1yAx+JAHMA5k+loeMzIC6t5uL3zwURz6oCakQSbg6h8WQychn7pCLAda5wH/+kFfoNMdZH3fE0GKANbBIEvICkBngdgeSDWScFhALgHh83Yq7wVeaRbcNgDVOHg2JtokuVC5+DsgrcC8oHddo+KBNgHYfLjpvtvto6Y9HOTI3bv8rgzRvlwGhy+yec7+YMYhrIy7ja+b1QQ4eYlgWh1XU80JAlsd8uCaSTT1nG+Gr7P9nMAALOfn59I/rdJ0PZENYY/i1Vvrky1WaYndESkfmg8vifOydsLAw4gpk8L8QWxn/wTxYHGn1yyMR4eILmg2nYuTUTCquAJKw5Kol4GTJGbaMUiJl/R2Yv5vMysCV+ywXg8woZ12QkU2i0VPP0Y1PO4UrAjJ+71lWludPSg6/ZwNHh2Rya5cStlSesDIrXAKQWVSeq79Ji4G0GrMSS3yrgWy+sVLI5RAE6urqPuKPRSeSCHTc78b4ngVlMC5ryYGjZhJA/CCmx6b/zMpMcEYE4f4jBwoqunh/i/uv7gp7lRymSCQSH6vjOcEWi8XWudg+jmKbSRr2mET8IOOCFJICgNUeYZeTlQcWAbUjYvE9zqRSRhYFAEo5LEJCsTLkoeTwiWepVHL5nlDtySZFSaI64dhBvEDxtta97gYZHDKm7DI+zuO4hYgxq1CAkm1WoioXOXEtpwnUbVMptWEx4P5pXyCEhiSsyiGp2X+fsco9RozJ9Tg9W3SMZlgS85NHwD0N2VK1rJ2ElMv3u4LZQg9Oa02nakeNYLWjRrDaUSNY7dBqei7cxz5NZ89vvoQQLrGXivLLzUsIOtDSBIW1LK6LAVVHoU2zE2y1ZdlQUAveW93iphS5wDGuJ6PFOgN22AtnclcizhYaLOvLePbnGjokdXcFpaLsbxu6Iek1OaAir1PmI1kJcoAnL8SynqmWlparTDK8mUob6KChCRyyejP2Hgq3Gd72ghzgiQVVqI8GLogOXMaxQeQFPCcIZF9KhwUzlG3Kek0OqMhb9xxfX/ET2I7tHTIe72QqRg74B3cCCfZbUMIHAAAAAElFTkSuQmCC" alt="Discount-88" class="dis-position dis-width">
+                      <div class="card-header border-0 position-relative bg-white pt-7 px-7 radius-32">
+                        <img src="/learnplus/assets/course-2-3297f461.png" alt="course-2" class="card-img">
+                        <form action="#" class="card-icon-position">
+                          <input type="checkbox" id="collect" class="collect-ctrl d-none">
+                          <label for="collect" class="collect-bookmark cursor card-icon-bg me-2"><i class="bi bi-bookmark fs-5"></i></label>
+                          <label for="collect" class="collect-bookmark-fill cursor card-icon-bg me-2"><i class="bi bi-bookmark-fill fs-5"></i></label>
+                        </form>
+                      </div>
+                      <div class="card-body border-0 border-bottom-black px-0 mx-7">
+                        <div class="d-flex">
+                          <p class="tag-pill bg-gray-40 me-2 text-nowrap">陶瓷藝術入門</p>
+                          <p class="tag-pill tag-01 text-nowrap">精品文章</p>
+                        </div>
+                        <h4 class="mb-2 mt-5"><a href="#" class="text-gray-80 stretched-link">陶瓷藝術入門</a></h4>
+                        <div class="d-flex">
+                          <p class="me-4">講師－高宇琛</p>
+                          <p class="text-primary">ESTP</p>
+                        </div>
+                      </div>
+                      <div class="card-footer border-0 bg-white px-7 pt-5 pb-7 radius-32">
+                        <div class="d-flex justify-content-between">
+                          <h4>NT 899</h4>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFRSURBVHgB3ZNBSsNAFIbfzLSW2hbiyi5zBN25cJEbtF1YcGdukJ1gF9qFgrvcoLqOkCMYwQN4hCyDqwFLoTST50xCxIGYtIML8YdJZpL3PvL+9wLw10WaAobhpY1pa5EHt1I3mdzHdfEUGoSCPcuro1a2oaG18Cxj4OHTlQ8IdnkmhBx1+t3ruhz2IyyYefJWkUxOBtNTsgxeo6o8zcNhMHMEZCNK6AUg1pYmM2MEiCiSx+TsNtKAVuhZnbQXFl4ZSMLXH6tj7vo893BP9B1jmJL0uT3ojdQ2B+4zFknHOZiLs0368gWMJ3MOmM3BVChukvNiPrWmyDEJ5eePYQchwsP79M4tz9ocdlnb3al0xJgKoVWmAYvS4Q22lexuWWol8DdUBbRgWyGxm4FNf8j3UEDeCCSQjw9XhmcZ+vLJeL1cHail9qqr6l0RI8xH7f/oE3GJfBReXXmkAAAAAElFTkSuQmCC" alt="star">
+                            <p class="text-nowrap text-success">4.9 (858)</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card card-width border-0 position-relative radius-32">
+                      <img src="data:image/png;base64,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" alt="Discount-88" class="dis-position dis-width">
+                      <div class="card-header border-0 position-relative bg-white pt-7 px-7 radius-32">
+                        <img src="/learnplus/assets/course-3-c1c4278c.png" alt="course-3" class="card-img">
+                        <form action="#" class="card-icon-position">
+                          <input type="checkbox" id="collect" class="collect-ctrl d-none">
+                          <label for="collect" class="collect-bookmark cursor card-icon-bg me-2"><i class="bi bi-bookmark fs-5"></i></label>
+                          <label for="collect" class="collect-bookmark-fill cursor card-icon-bg me-2"><i class="bi bi-bookmark-fill fs-5"></i></label>
+                          <label for="cart" class="card-icon-bg"><i class="bi bi-cart fs-5"></i></label>
+                        </form>
+                      </div>
+                      <div class="card-body border-0 border-bottom-black px-0 mx-7">
+                        <div class="d-flex">
+                          <p class="tag-pill bg-gray-40 me-2 text-nowrap">語言與文學</p>
+                          <p class="tag-pill tag-02 text-nowrap">錄製課程</p>
+                        </div>
+                        <h4 class="mb-2 mt-5"><a href="#" class="text-gray-80 stretched-link">韓語口語實踐</a></h4>
+                        <div class="d-flex">
+                          <p class="me-4">講師－高宇琛</p>
+                          <p class="text-primary">ESTP</p>
+                        </div>
+                      </div>
+                      <div class="card-footer border-0 bg-white px-7 pt-5 pb-7 radius-32">
+                        <div class="d-flex justify-content-between">
+                          <h4>NT 899</h4>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFRSURBVHgB3ZNBSsNAFIbfzLSW2hbiyi5zBN25cJEbtF1YcGdukJ1gF9qFgrvcoLqOkCMYwQN4hCyDqwFLoTST50xCxIGYtIML8YdJZpL3PvL+9wLw10WaAobhpY1pa5EHt1I3mdzHdfEUGoSCPcuro1a2oaG18Cxj4OHTlQ8IdnkmhBx1+t3ruhz2IyyYefJWkUxOBtNTsgxeo6o8zcNhMHMEZCNK6AUg1pYmM2MEiCiSx+TsNtKAVuhZnbQXFl4ZSMLXH6tj7vo893BP9B1jmJL0uT3ojdQ2B+4zFknHOZiLs0368gWMJ3MOmM3BVChukvNiPrWmyDEJ5eePYQchwsP79M4tz9ocdlnb3al0xJgKoVWmAYvS4Q22lexuWWol8DdUBbRgWyGxm4FNf8j3UEDeCCSQjw9XhmcZ+vLJeL1cHail9qqr6l0RI8xH7f/oE3GJfBReXXmkAAAAAElFTkSuQmCC" alt="star">
+                            <p class="text-nowrap text-success">4.9 (858)</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card card-width border-0 position-relative radius-32">
+                      <img src="data:image/png;base64,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" alt="Discount-88" class="dis-position dis-width">
+                      <div class="card-header border-0 position-relative bg-white pt-7 px-7 radius-32">
+                        <img src="/learnplus/assets/course-4-f9eeebd5.png" alt="course-4" class="card-img">
+                        <form action="#" class="card-icon-position">
+                          <input type="checkbox" id="collect" class="collect-ctrl d-none">
+                          <label for="collect" class="collect-bookmark cursor card-icon-bg me-2"><i class="bi bi-bookmark fs-5"></i></label>
+                          <label for="collect" class="collect-bookmark-fill cursor card-icon-bg me-2"><i class="bi bi-bookmark-fill fs-5"></i></label>
+                          <label for="cart" class="card-icon-bg"><i class="bi bi-cart fs-5"></i></label>
+                        </form>
+                      </div>
+                      <div class="card-body border-0 border-bottom-black px-0 mx-7">
+                        <div class="d-flex">
+                          <p class="tag-pill bg-gray-40 me-2 text-nowrap">語言與文學</p>
+                          <p class="tag-pill tag-04 text-nowrap">課程組合</p>
+                        </div>
+                        <h4 class="mb-2 mt-5"><a href="#" class="text-gray-80 stretched-link">數位行銷策略</a></h4>
+                        <div class="d-flex">
+                          <p class="me-4">講師－高宇琛</p>
+                          <p class="text-primary">ESTP</p>
+                        </div>
+                      </div>
+                      <div class="card-footer border-0 bg-white px-7 pt-5 pb-7 radius-32">
+                        <div class="d-flex justify-content-between">
+                          <h4>NT 899</h4>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFRSURBVHgB3ZNBSsNAFIbfzLSW2hbiyi5zBN25cJEbtF1YcGdukJ1gF9qFgrvcoLqOkCMYwQN4hCyDqwFLoTST50xCxIGYtIML8YdJZpL3PvL+9wLw10WaAobhpY1pa5EHt1I3mdzHdfEUGoSCPcuro1a2oaG18Cxj4OHTlQ8IdnkmhBx1+t3ruhz2IyyYefJWkUxOBtNTsgxeo6o8zcNhMHMEZCNK6AUg1pYmM2MEiCiSx+TsNtKAVuhZnbQXFl4ZSMLXH6tj7vo893BP9B1jmJL0uT3ojdQ2B+4zFknHOZiLs0368gWMJ3MOmM3BVChukvNiPrWmyDEJ5eePYQchwsP79M4tz9ocdlnb3al0xJgKoVWmAYvS4Q22lexuWWol8DdUBbRgWyGxm4FNf8j3UEDeCCSQjw9XhmcZ+vLJeL1cHail9qqr6l0RI8xH7f/oE3GJfBReXXmkAAAAAElFTkSuQmCC" alt="star">
+                            <p class="text-nowrap text-success">4.9 (858)</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card card-width border-0 position-relative radius-32">
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAYxSURBVHgB7VpNbBtFFH520jqhdpSEn8ZFDk6UXNrLpjlwIBGtyiFFlbgQKg6oCYgLUgJcKpULt0TqBTW9VEI0qTi16QEk1HAANSWBW0kuLYdU1CQCh6oKUewQt0ls3je7Y8Ybrz3req0a/Ekrez3Ps++b97Nv3i5RhRCJRKba29szOPj7JFUIdVQBgJzP5zsTbPDT/nofbe+S0dTUFN3Y2PiaPIbnBCW5tpZ9dOmDCL3xchPN3d2kzVSmIiQ9IxiNRptDodAlSW7i/RepraWego111H/4QA5Jv99/K8UgD+AjDwBy6XT6Jn81VHIqVv/aptHPf+fPHZwusiWPrzOozCi7BXXIAaolk6l0WyAQGGBrXy23JctKUJecRCVIFnRRThBDfMFXSR8GaZJTYXPXGB+zpI/Z5eXlK06DBQnyPQv3qyFyAbfkJGwk3WCKCQ47DWppcbK3iXo6GnREyeh8xjU5QC7M4q9bWvILLDfzc6KonJYmRkcjDfSGyGuA5EDvPi3ZDB86BP30H0eNYLWjRrDaUSNY7fj/EkThzB/H6OmH0cxwGsxLUNkVRFFd9HQ20tMG6GSVhNg033QiuYeg2y3PkwD15OR3a0XlEqm0kFVh082R5J7dBO8gFqgC5ACQm/x+jX4Y78r+FufdxL34I1pd26al+GMuvv+m1XVzh/HFaIS6w4GcOYp1BnK0R4OIipCL84Tj0w+EEkDfkSANn2ilsCKLFYfy83eS2MhSFyt1bvBgjkw+QNnT538T39GBC7Me/Tx/d3i/4y5F6mqRNLgP9Bnzy26ffCo5e4MoH946H6PkVlqQAqZ/WhfTXDv70h6Zwb5mCgb8QgZEr52NCsXhbiCDnfw8H+fefEH8r/tQgN6dWOHzg7xFc7d7US2ZyWSmVlZWBEm/G3JzdzbFBCOnnhfK4wBRTC4taiq/I1YeY5CBwiCM/wPf3t6g8esPBDkA33FAplSoujOXIdlcrtclByRTu3knFmOWcsFGM291sVtJ2F0T7orDHoNYKHmduMPOvpCb29wVJKledpx1Ekr/4SBdbHgolDI4TeNiM2wNTNx1yAx+JAHMA5k+loeMzIC6t5uL3zwURz6oCakQSbg6h8WQychn7pCLAda5wH/+kFfoNMdZH3fE0GKANbBIEvICkBngdgeSDWScFhALgHh83Yq7wVeaRbcNgDVOHg2JtokuVC5+DsgrcC8oHddo+KBNgHYfLjpvtvto6Y9HOTI3bv8rgzRvlwGhy+yec7+YMYhrIy7ja+b1QQ4eYlgWh1XU80JAlsd8uCaSTT1nG+Gr7P9nMAALOfn59I/rdJ0PZENYY/i1Vvrky1WaYndESkfmg8vifOydsLAw4gpk8L8QWxn/wTxYHGn1yyMR4eILmg2nYuTUTCquAJKw5Kol4GTJGbaMUiJl/R2Yv5vMysCV+ywXg8woZ12QkU2i0VPP0Y1PO4UrAjJ+71lWludPSg6/ZwNHh2Rya5cStlSesDIrXAKQWVSeq79Ji4G0GrMSS3yrgWy+sVLI5RAE6urqPuKPRSeSCHTc78b4ngVlMC5ryYGjZhJA/CCmx6b/zMpMcEYE4f4jBwoqunh/i/uv7gp7lRymSCQSH6vjOcEWi8XWudg+jmKbSRr2mET8IOOCFJICgNUeYZeTlQcWAbUjYvE9zqRSRhYFAEo5LEJCsTLkoeTwiWepVHL5nlDtySZFSaI64dhBvEDxtta97gYZHDKm7DI+zuO4hYgxq1CAkm1WoioXOXEtpwnUbVMptWEx4P5pXyCEhiSsyiGp2X+fsco9RozJ9Tg9W3SMZlgS85NHwD0N2VK1rJ2ElMv3u4LZQg9Oa02nakeNYLWjRrDaUSNY7dBqei7cxz5NZ89vvoQQLrGXivLLzUsIOtDSBIW1LK6LAVVHoU2zE2y1ZdlQUAveW93iphS5wDGuJ6PFOgN22AtnclcizhYaLOvLePbnGjokdXcFpaLsbxu6Iek1OaAir1PmI1kJcoAnL8SynqmWlparTDK8mUob6KChCRyyejP2Hgq3Gd72ghzgiQVVqI8GLogOXMaxQeQFPCcIZF9KhwUzlG3Kek0OqMhb9xxfX/ET2I7tHTIe72QqRg74B3cCCfZbUMIHAAAAAElFTkSuQmCC" alt="Discount-88" class="dis-position dis-width">
+                      <div class="card-header border-0 position-relative bg-white pt-7 px-7 radius-32">
+                        <img src="/learnplus/assets/course-5-cbf3870b.png" alt="course-5" class="card-img">
+                        <form action="#" class="card-icon-position">
+                          <input type="checkbox" id="collect" class="collect-ctrl d-none">
+                          <label for="collect" class="collect-bookmark cursor card-icon-bg me-2"><i class="bi bi-bookmark fs-5"></i></label>
+                          <label for="collect" class="collect-bookmark-fill cursor card-icon-bg me-2"><i class="bi bi-bookmark-fill fs-5"></i></label>
+                          <label for="cart" class="card-icon-bg"><i class="bi bi-cart fs-5"></i></label>
+                        </form>
+                      </div>
+                      <div class="card-body border-0 border-bottom-black px-0 mx-7">
+                        <div class="d-flex">
+                          <p class="tag-pill bg-gray-40 me-2 text-nowrap">語言與文學</p>
+                          <p class="tag-pill tag-02 text-nowrap">數位行銷策略</p>
+                        </div>
+                        <h4 class="mb-2 mt-5"><a href="#" class="text-gray-80 stretched-link">創意視覺故事</a></h4>
+                        <div class="d-flex">
+                          <p class="me-4">講師－高宇琛</p>
+                          <p class="text-primary">ESTP</p>
+                        </div>
+                      </div>
+                      <div class="card-footer border-0 bg-white px-7 pt-5 pb-7 radius-32">
+                        <div class="d-flex justify-content-between">
+                          <h4>NT 899</h4>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFRSURBVHgB3ZNBSsNAFIbfzLSW2hbiyi5zBN25cJEbtF1YcGdukJ1gF9qFgrvcoLqOkCMYwQN4hCyDqwFLoTST50xCxIGYtIML8YdJZpL3PvL+9wLw10WaAobhpY1pa5EHt1I3mdzHdfEUGoSCPcuro1a2oaG18Cxj4OHTlQ8IdnkmhBx1+t3ruhz2IyyYefJWkUxOBtNTsgxeo6o8zcNhMHMEZCNK6AUg1pYmM2MEiCiSx+TsNtKAVuhZnbQXFl4ZSMLXH6tj7vo893BP9B1jmJL0uT3ojdQ2B+4zFknHOZiLs0368gWMJ3MOmM3BVChukvNiPrWmyDEJ5eePYQchwsP79M4tz9ocdlnb3al0xJgKoVWmAYvS4Q22lexuWWol8DdUBbRgWyGxm4FNf8j3UEDeCCSQjw9XhmcZ+vLJeL1cHail9qqr6l0RI8xH7f/oE3GJfBReXXmkAAAAAElFTkSuQmCC" alt="star">
+                            <p class="text-nowrap text-success">4.9 (858)</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card card-width border-0 position-relative radius-32">
+                      <img src="data:image/png;base64,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" alt="Discount-88" class="dis-position dis-width">
+                      <div class="card-header border-0 position-relative bg-white pt-7 px-7 radius-32">
+                        <img src="/learnplus/assets/course-6-7bc5b75d.png" alt="course-6" class="card-img">
+                        <form action="#" class="card-icon-position">
+                          <input type="checkbox" id="collect" class="collect-ctrl d-none">
+                          <label for="collect" class="collect-bookmark cursor card-icon-bg me-2"><i class="bi bi-bookmark fs-5"></i></label>
+                          <label for="collect" class="collect-bookmark-fill cursor card-icon-bg me-2"><i class="bi bi-bookmark-fill fs-5"></i></label>
+                          <label for="cart" class="card-icon-bg"><i class="bi bi-cart fs-5"></i></label>
+                        </form>
+                      </div>
+                      <div class="card-body border-0 border-bottom-black px-0 mx-7">
+                        <div class="d-flex">
+                          <p class="tag-pill bg-gray-40 me-2 text-nowrap">語言與文學</p>
+                          <p class="tag-pill tag-03 text-nowrap">直播課程</p>
+                        </div>
+                        <h4 class="mb-2 mt-5"><a href="#" class="text-gray-80 stretched-link">全球化的利與弊</a></h4>
+                        <div class="d-flex">
+                          <p class="me-4">講師－高宇琛</p>
+                          <p class="text-primary">ESTP</p>
+                        </div>
+                      </div>
+                      <div class="card-footer border-0 bg-white px-7 pt-5 pb-7 radius-32">
+                        <div class="d-flex justify-content-between">
+                          <h4>NT 899</h4>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFRSURBVHgB3ZNBSsNAFIbfzLSW2hbiyi5zBN25cJEbtF1YcGdukJ1gF9qFgrvcoLqOkCMYwQN4hCyDqwFLoTST50xCxIGYtIML8YdJZpL3PvL+9wLw10WaAobhpY1pa5EHt1I3mdzHdfEUGoSCPcuro1a2oaG18Cxj4OHTlQ8IdnkmhBx1+t3ruhz2IyyYefJWkUxOBtNTsgxeo6o8zcNhMHMEZCNK6AUg1pYmM2MEiCiSx+TsNtKAVuhZnbQXFl4ZSMLXH6tj7vo893BP9B1jmJL0uT3ojdQ2B+4zFknHOZiLs0368gWMJ3MOmM3BVChukvNiPrWmyDEJ5eePYQchwsP79M4tz9ocdlnb3al0xJgKoVWmAYvS4Q22lexuWWol8DdUBbRgWyGxm4FNf8j3UEDeCCSQjw9XhmcZ+vLJeL1cHail9qqr6l0RI8xH7f/oE3GJfBReXXmkAAAAAElFTkSuQmCC" alt="star">
+                            <p class="text-nowrap text-success">4.9 (858)</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- mbtitest -->
+    <section>
+      <div class="py-11 py-lg-15">
+        <div class="container">
+          <div class="pt-9">
+            <div class="row">
+              <div class="col-lg-10 mx-auto">
+                <div class="d-flex flex-column align-items-center mb-5 mb-lg-11">
+                  <h1 class="mb-5 mb-lg-7">MBTI測驗</h1>
+                  <p class="text-center mb-5 mb-lg-7">通過區分色彩化的性格類型，幫助人們了解自身優勢，改善溝通合作，規劃職業方向，促進個人學習和團隊發展。</p>
+                  <h5 class="btn btn-primary border-2 border-black">前往測驗 <i class="bi bi-arrow-right"></i></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <picture>
+          <source srcset="/learnplus/assets/mbti-image-0afded8f.png " media="(min-width:768px)">
+          <img src="/learnplus/assets/mbti-image-sm-8b049670.png" alt="mbti-image-sm" class="mbti-image">
+        </picture>
+      </div>
+    </section>
+    <!-- Q & A -->
+    <section class="position-relative">
+      <div class="qa-bg pt-13 pb-9 py-md-15">
+        <div class="form-border form-bg position-relative mx-auto">
+          <form action="#" class="input-group position-absolute form-width start-50 translate-middle">
+            <label for="search" class="input-group-text pe-0 bg-white border-search radius-24"><i class="bi bi-search text-gray-40"></i></label>
+            <input type="text" id="search" placeholder="搜尋" class="form-control border-input radius-24 ps-2 ps-md-5">
+          </form>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 mx-auto">
+                <div class="accordion accordion-h overflow-auto mt-11 mt-md-15" id="accordionExample">
+                  <div class="accordion-item mb-5 mb-md-9 radius-32">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button fw-medium radius-32 fs-md-5 py-md-8 px-md-11" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        如何報告技術問題或故障
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show radius-32" data-bs-parent="#accordionExample">
+                      <div class="accordion-body px-lg-11 pt-0 pb-lg-7">
+                        <p class="fs-7 fs-md-6">如果您在使用我們的產品時遇到任何技術問題或故障，請按照以下步驟報告：</p>
+                        <ol class="fs-7 fs-md-6 ps-5">
+                          <li>描述問題： 簡單清楚地描述您遇到的問題，包括具體情況和影響。</li>
+                          <li>提供信息： 請告知我們問題發生的時間、您所使用的設備、操作系統版本，以及瀏覽器或應用程式的版本。</li>
+                          <li>重現步驟： 列出問題發生前的操作步驟，以便我們能夠重現並解決該問題。</li>
+                          <li>聯繫方式： 請提供您的聯繫方式，以便我們能夠在需要更多信息時與您取得聯繫。</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item mb-5 mb-md-9 radius-32">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed fw-medium radius-32 fs-md-5 py-md-8 px-md-11" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                        如何參與平台的社群活動或討論?
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse radius-32" data-bs-parent="#accordionExample">
+                      <div class="accordion-body px-lg-11 pt-0 pb-lg-7">
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item mb-5 mb-md-9 radius-32">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed fw-medium radius-32 fs-md-5 py-md-8 px-md-11" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" >
+                        如何申請成為平台的合作夥伴或供應商?
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse radius-32" data-bs-parent="#accordionExample">
+                      <div class="accordion-body px-lg-11 pt-0 pb-lg-7">
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item mb-5 mb-md-9 radius-32">
+                    <h2 class="accordion-header" id="headingFour">
+                      <button class="accordion-button collapsed fw-medium radius-32 fs-md-5 py-md-8 px-md-11" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" >
+                        如何報告技術問題或故障?
+                      </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse radius-32" data-bs-parent="#accordionExample">
+                      <div class="accordion-body px-lg-11 pt-0 pb-lg-7">
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item radius-32">
+                    <h2 class="accordion-header" id="headingFive">
+                      <button class="accordion-button collapsed fw-medium radius-32 fs-md-5 py-md-8 px-md-11" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" >
+                        如何報告技術問題或故障?
+                      </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse radius-32" data-bs-parent="#accordionExample">
+                      <div class="accordion-body px-lg-11 pt-0 pb-lg-7">
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="/learnplus/assets/FAQ-2875b303.png" alt="FAQ" class="d-none d-xxl-block faq-position">
+    </section>
+
+    <div class="container">
+    <div class="py-7 py-lg-11">
+        <div class="d-flex justify-content-lg-between flex-column flex-lg-row">
+            <div class="d-flex flex-column flex-lg-row">
+                <div class="me-lg-15 text-center">
+                    <a href="#"><img src="/learnplus/assets/Logo-54f9b18f.png" alt="logo" class="logo-text mb-2"></a>
+                    <div class="d-flex justify-content-center">
+                        <a href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANgSURBVHgB7ZhNSBRhGMeflS36IN0OEhmiFR7UwIwurQcjC5QOfR0K7GCQnQo7FFSgIl2DFDploIcuimaHvg4W66G9FKmgdjB0RbDIwI9Qog+n5//OTM2O6+4778wsLOwPHmZ2993d/zzv8/7fZyagMZRB5FCGkRXsN1nBfgPBMcogshn2myApCI7OT9HsygKpkrd5K5WHCqhwW4icAsEjsoMhtOldP82uLpIXNJaE6W7FSUffgeAZmYGv5j5SQ/QxeUnnZJSWf/2gjsPnpL+DGo7IDGweeUZ+0BP7QC/nJqTH5wQCAcxvLNkgUbMelMGB0G7qCteLUrDSy6JlMW3tabJBbhaYFUx9XUGZqFvrghtb+iL9G0HjOMRxnVySu2kLhfP3ChcQQhY/0ziHCaa+nLOMBCxx7apgCo5wYM6d+4zBjbIausJTDdFWovPT7Cx9oqTuTbwRr3Ehy24Eo465j4/w6WlS4En1ZZFZXaDu0abX4v3BE9fo7NAjkW0IdkPQct6hIhiZhSiIbHrfHycoj7ONz7HIuo/UU83gA+XMmvzrJTjLEdLLQhpd0DFxjgzas4c6bR59Lt4v3L5TlIxb7M1POzkgrgyS2F7n5Ftj/D5yi10wykI6y7mGG6SyPdO2VHoHO3GCjU3EUZZlMJ3Dbf2CRP0wshwjCcYMj63dU77OzqxcKDoUN94N6wQbWW4jCUybwuK7yW6QCGzH5lb88FOU3JLwjoNFd5NkU9TCLoCphqjXx69SbUGpqFXsaLA0eLQQywtv3IMMB5N8doljmFLsfphmWFpX+KIQ2c1HOxDbMvqCvGBDwZzlGO9+KI37lAJTNGzufFGl8FwQ/TpFPTPDrnc3KcGARbez6CKSaIxgbT0IB62iCjJ3zW3ffq5I30apkMxh7KQUDNf4vrZ6hnykytgxZZB6LnG7tC7G0j3fUADqvbGkSnp8gBywq+/OAGlqLWgiUAqwPXi1LI4Eg/zeWw37d+S3/l77U0yKoAfBrVKihj8VjgUDdo5iPgxwHKQ0o/RsDR7NUUk+NEq+w9lu4FjQ0gR5AUqEY0BLA+Qlmp7tac1HyA/4d1v9Ek5+oell4nnGKR3w/5zi6NI8QMmHXQhHb11N+vOPoxzF5JC0CrZjXEAF/RePCFmO6/gLpjdZixomyH4AAAAASUVORK5CYII=" alt="ig" class="text-success"></a>
+                        <a href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKNSURBVHgB7Zg9aBRBFMf/qxvQKHopIkYInEIEPyCFXSw8jYXa+IFgGS1MJWIhWAU9wVrTqhA7EQRtFBvhUiSCghowWASSPQJJICTZC+QDApm8tx+Xy+YuO9mdWfbgfjDM7M0y+7+3b9+bN4YgUEfsQZ3REKybhmDdsGALdUTDwroxISl4cW0Vr8eGMLlsQyXtzRncyZ5zehlY8N+wmyaXFnBr8K1ysT4fin/w/fIDHGraF3ovu0QxfMHf2sQybBB+ezKw4ILMgrqRNYhpGIZN+x+LxllooP1AC64eO4Uzh9ucMTNqT6Fv5CuiYHr9Z2qPoJjejvN43nmtykz0DaIfhwehGLZqdbHx8AUXqCn9qu6TdXXguITnxwUa3oAizmbatlx/m/qPh78+OvE8DpWpuR8KCcZUDltxxTJlwWTlAhS7hQ6Cm59XSDlm4JrdgsObXGIP8Pj0JdoTtNSY6y4noH+labwZG0YUtgj2Pj628jNEoKv1BLXjNebod2+uJJmGq1FtP8xWtqCRH7MTiErQJXwr52k4gF0yak/Dz2Js7eBcaW3FGQ+pFMyQ6HckuoeGOeyCvpEv5fHM7Rfb5oZjCPXZqUS6hxSGuZqCycoWdXmkjB2LUBLNESNVsVmmas6PL82HllFJESqYo8bPuWL9CE4bcoKF/rML2TJfSnCz2dQPt+7TAtd6fDYhgylzk3Uzbx99/+Tiurm3B4ZbrHYfOZlr3X8wC0muUMnkF6GV8Gapt6NL6kwiNpQNX4qEQVxojbvUFkRCQAW0TpbaJ5EAUIlwrT0hNAId0LpPdQmHLoTrJsotjiSg51ynNiAUYCBB6Hmczi7APbDJIcIBZKKCg3h/oBOb4rllKvptbABoell2AkVqvAAAAABJRU5ErkJggg==" alt="facebook"></a>
+                        <a href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALgSURBVHgB7ZhBaBNBFIbfNlFshSQVCioEVsGDRaiKp1waFA/FgxYPXgQT0KN4CXhSiV49pFcvUVDEg7YHBQ+i8WAuilYoeijYlYI97CHZQNrSCuN72Wxsm93OzGZmIZAPHrPZvNn98+bNzJsYDIE+Ygj6jIFg3QwE64YEW9BHDCKsm74THEebl+mwvFqD5aZr7uf6tjaI9Eiq1Sb27IMkWnr/KNqBzn0Zwb9FHBfqK3D3+xuo2kugkhOpQ1DOXBUWbmApQZ613Zze/vkJuepT0MmryeuQGTvC9RsyDIPG0gpyoKG/M/8adJPHgDQ217l+3rI2F+RAKcDLTxU4KPaF9ZXr5wn+GORQtX9BVCw4K1wfT3AFzTeMUUS3865mjevTEtzO44qfgyOQVx4040UmThCORA4TM34OjY01EOX+xIXWbJ85c1l6fW29S0YwRrkCPmkhE2GPK+ZpeHf+JhTGz0n1EwnOzuKn1PWQEIIJ2s0K42fh81QBpg4fF+ojmxIEpYXSWUZbMO1kN45lQAXbBLcnXwk0ECan/Yj73KMo59BMUAAtVbe+vFRWg3QJpihjfVHEyzJ9puoqTB5Tn0eLn+Dhj/fCfSjvefhFmEQ/RtHX8DKbDCGYiiWqP2Q3ncTeYa5PfJfv8mjf8CEpEHwxDT3latjhTwhEOPBMh1G2sCmKDJMH5WsvuZrsRTCBokuLDXsOIoKWQB7cU7O9sVqBiBAq4HkOw7HYE3DXZ61QdDNjR7l+XMHWdLFusL/ToJkHWDiJbC4GCHLw+W2TxWOzeHkSFEJpQFUelaYiCAv2IOHPsvkP9nrTdDbXOmu06DE/PeJOLPeYPyq9ZUsLJnBTMbFRHm0RQv23Rms02inQVChpBaOdQ6uxiAAVUIqgzbIIAJUwN9pLTCOgA3zuPV3CQRfMTRPlEYcowPdcRCszBYRah3sQTrvEJNoltCyEOIZFKngn7R8wAf/Fk6W2tF38A6rXGn2ljNTdAAAAAElFTkSuQmCC" alt="youtube"></a>
+                    </div>
+                </div>
+                <div class="d-flex flex-column text-center text-lg-start">
+                    <p class="mb-5 fs-7"><i class="bi bi-envelope me-2"></i>learnplus@gmail.com</p>
+                    <p class="mb-7 fs-7"><i class="bi bi-geo-alt me-2"></i>嘉義市西區中正路15號</p>
+                    <div class="d-flex justify-content-center">
+                        <div class="btn btn-outline-primary btn-padding-sm btn-width me-3 me-lg-5 text-nowrap">意見回饋</div>
+                        <div class="btn btn-outline-primary btn-padding-sm btn-width text-nowrap">我想成為講師</div>
+                    </div>
+                </div>
+            </div>
+            <img src="/learnplus/assets/QR code-3e8b64ab.png" alt="QR code" class="qr-size qr-border mx-auto mx-lg-0 mt-5 mt-lg-0">
+        </div>
+    </div>
+</div>
+<div class="copyright-bg">
+    <div class="container">
+        <div class="d-flex flex-column-reverse flex-lg-row justify-content-between align-items-center py-3 py-lg-7">
+            <div class="text-gray-40 pt-3 pt-lg-0 fs-7">@2024 學識伴 LearnPlus++</div>
+            <ul class="d-flex align-items-center list-unstyled fw-medium">
+                <li class="me-7"><a href="#" class="text-gray-40">私隱政策聲明</a></li>
+                <li class="me-7"><a href="#" class="text-gray-40">網站使用條款</a></li>
+                <li ><a href="#" class="text-gray-40">商業合作</a></li>
+            </ul>
+        </div>
+    </div>
+</div>    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+  </body>
+</html>
