@@ -133,3 +133,37 @@
     background-color: $primary-light;
     padding: 12px;
 }
+
+//circle
+.circle{
+    --width: 128px;
+    --percent: 60;
+    --deg: calc(360deg * calc(var(--percent) / 100));
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    background-image: conic-gradient(#D1E9DD var(--deg), #fff var(--deg));
+    border: 1px solid #000;
+    position: relative;
+}
+.circle-inside{
+    --bar-width: 30px;
+    position: absolute;
+    display: flex;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 15%);
+    border-radius: 50%;
+    background: #ffff;
+    width: calc(var(--width) - var(--bar-width));
+    height: calc(var(--width) - var(--bar-width));
+    align-items: center;
+    padding: 0;
+    justify-content: center;
+    font-weight:medium;
+}
+.circle-text{
+    position: absolute;
+    top: 65%;
+    left: 30%;
+}
