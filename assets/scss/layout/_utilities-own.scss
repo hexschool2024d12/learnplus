@@ -138,9 +138,42 @@
 }
 
 //circle
-.circle{
+.circle-prograss{
     --width: 128px;
-    --percent: 60;
+    --percent: 75;
+    --deg: calc(360deg * calc(var(--percent) / 100));
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    background-image: conic-gradient(#D1E9DD var(--deg), #fff var(--deg));
+    border: 1px solid #000;
+    position: relative;
+}
+.circle-submit{
+    --width: 128px;
+    --percent: 0;
+    --deg: calc(360deg * calc(var(--percent) / 100));
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    background-image: conic-gradient(#D1E9DD var(--deg), #fff var(--deg));
+    border: 1px solid #000;
+    position: relative;
+}
+.circle-score{
+    --width: 128px;
+    --percent: 0;
+    --deg: calc(360deg * calc(var(--percent) / 100));
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    background-image: conic-gradient(#D1E9DD var(--deg), #fff var(--deg));
+    border: 1px solid #000;
+    position: relative;
+}
+.circle-certificate{
+    --width: 128px;
+    --percent: 100;
     --deg: calc(360deg * calc(var(--percent) / 100));
     width: 128px;
     height: 128px;

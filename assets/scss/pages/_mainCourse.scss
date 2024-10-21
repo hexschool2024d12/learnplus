@@ -83,37 +83,42 @@
 }
 }
 @media (min-width: 400px) {
-.bg-gray-200 {
-  min-height: auto; /* 取消固定高度 */
-  height: auto; /* 自動調整高度 */
-}
+  .bg-gray-200 {
+    min-height: auto; /* 取消固定高度 */
+    height: auto; /* 自動調整高度 */
+  }
 }
 
 
 @media (max-width: 998px) {
-.message{
-  transform: translate(0, -120px); text-align: center;
-  svg{
-    opacity:0;
+  .message{
+    transform: translate(0, -120px); text-align: center;
+    svg{
+      opacity:0;
+    }
+  }
+  .messagetitle p{ 
+    display: none;
+  }
+  .messagetitle button{
+    display: none;
   }
 }
-.messagetitle p{ 
-  display: none;
-}
-.messagetitle button{
-  display: none;
-}
-}
 @media (max-width: 768px) {
-.messagetitle button{
-  transform: translate(0px, 10px);
-}
+  .messagetitle button{
+    transform: translate(0px, 10px);
+  }
 }
 @media (max-width: 500px){
-.messagetitle button{
-  display: none;
+  .messagetitle button{
+    display: none;
+  }
+  .moreinform{
+    transform: translate(0px, -50px);
+  }
 }
-.moreinform{
-  transform: translate(0px, -50px);
-}
+.photomary-img{
+  width: 48px;
+  object-fit: cover;
+  border-radius: 24px;
 }

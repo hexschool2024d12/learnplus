@@ -7,79 +7,113 @@
     <title>mainCourse</title>
   </head>
   <body>
-    <%- include('./layout/header'); -%>
+    <!-- <%- include('./layout/header'); -%> -->
     <div class="bgdownImg" style="background-image: url('/assets/images/background-2.png');">
     </div>
       <div class="content">
     <!--上方選單 -->
-  <div class="container">
-    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-      <ol class="breadcrumb mb-4 mt-5">
-        <li class="breadcrumb-item active"><a href="#" >所有課程</a></li>
-        <li class="breadcrumb-item" aria-current="page"><a href="#">藝術與設計</a></li>
-        <li class="breadcrumb-item" aria-current="page"><a href="#" class="text-green">零基礎的手機攝影術 瞬間拍出專業的風景照</a></li>
-      </ol>
-    </nav>
-  </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb mb-4 mt-5">
+              <li class="breadcrumb-item active"><a href="#" class="text-gray-60">所有課程</a></li>
+              <li class="breadcrumb-item" aria-current="page"><a href="#" class="text-gray-60">藝術與設計</a></li>
+              <li class="breadcrumb-item" aria-current="page"><a href="#" class="text-success">零基礎的手機攝影術 瞬間拍出專業的風景照</a></li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
     <!-- 課程影片.清單.進度 -->
     <div class="container">
       <div class="sectionTop d-flex justify-content-center gap-4">
         <div>
           <img src="/assets/images/Frame_lg.png" class="w-100 rounded-top-2" alt="..." >
           <div class="card-body border border-2  border-dark rounded-bottom-2">
-            <div class="classinform d-flex justify-content-between align-items-center p-4">
+            <div class="classinform d-flex justify-content-between align-items-center p-7">
               <h5 class="card-title fs-5 fw-bold ">零基礎手機攝影術 瞬間拍出專業的風景照</h5>
               <div class="d-flex">
-                <a href="#" class="btn btn-gray-40 rounded-pill me-3 p-1">藝術與設計</a>
+                <a href="#" class="btn btn-gray-40 rounded-pill me-5 p-1">藝術與設計</a>
                 <a href="#" class="btn btn-purple rounded-pill p-1">錄製課程</a>
               </div>
             </div>
           </div>
-      
+          <!-- 進度條 -->
           <div class="row d-flex justify-content-around">
             <div class="col">
-            <div class="circle">
-              <div class="card">
-                <div class="card-body circle-inside d-flex flex-column">
-                  <span class="text-secondary fw-bold">75%</span>
-                  <h6 class="card-title">上課進度</h6>
+              <div class="circle-prograss">
+                <div class="card border-0">
+                  <div class="card-body circle-inside d-flex flex-column">
+                    <span class="text-secondary fw-bold">75%</span>
+                    <h6 class="card-title">上課進度</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="circle-submit" >
+                <div class="card border-0">
+                  <div class="card-body circle-inside d-flex flex-column">
+                    <span class="text-secondary fw-bold">0%</span>
+                    <h6 class="card-title">繳交作業率</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="circle-score" >
+                <div class="card border-0">
+                  <div class="card-body circle-inside d-flex flex-column">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-secondary">
+                      <mask id="mask0_11348_4197" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                      <rect width="24" height="24" fill="currentColor"/>
+                      </mask>
+                      <g mask="url(#mask0_11348_4197)">
+                      <path d="M7.625 6.4L10.425 2.775C10.625 2.50833 10.8625 2.3125 11.1375 2.1875C11.4125 2.0625 11.7 2 12 2C12.3 2 12.5875 2.0625 12.8625 2.1875C13.1375 2.3125 13.375 2.50833 13.575 2.775L16.375 6.4L20.625 7.825C21.0583 7.95833 21.4 8.20417 21.65 8.5625C21.9 8.92083 22.025 9.31667 22.025 9.75C22.025 9.95 21.9958 10.15 21.9375 10.35C21.8792 10.55 21.7833 10.7417 21.65 10.925L18.9 14.825L19 18.925C19.0167 19.5083 18.825 20 18.425 20.4C18.025 20.8 17.5583 21 17.025 21C16.9917 21 16.8083 20.975 16.475 20.925L12 19.675L7.525 20.925C7.44167 20.9583 7.35 20.9792 7.25 20.9875C7.15 20.9958 7.05833 21 6.975 21C6.44167 21 5.975 20.8 5.575 20.4C5.175 20 4.98333 19.5083 5 18.925L5.1 14.8L2.375 10.925C2.24167 10.7417 2.14583 10.55 2.0875 10.35C2.02917 10.15 2 9.95 2 9.75C2 9.33333 2.12083 8.94583 2.3625 8.5875C2.60417 8.22917 2.94167 7.975 3.375 7.825L7.625 6.4Z" fill="currentColor"/>
+                      </g>
+                    </svg>                    
+                    <h6 class="card-title">課程評分</h6>
+                    <p class="circle-text"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="circle-certificate" >
+                <div class="card border-0">
+                  <div class="card-body circle-inside d-flex flex-column">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-secondary">
+                      <mask id="mask0_11219_4422" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                      <rect width="24" height="24" fill="currentColor"/>
+                      </mask>
+                      <g mask="url(#mask0_11219_4422)">
+                      <path d="M9.52505 18L20.125 7.39999L18.7001 5.99999L9.50005 15.175L5.27505 10.925L3.85005 12.35L9.52505 18ZM9.52505 20.825L1.05005 12.35L5.27505 8.09999L9.52505 12.35L18.6751 3.17499L22.975 7.37499L9.52505 20.825Z" fill="currentColor"/>
+                      </g>
+                    </svg>
+                    <h6 class="card-title">完課證明</h6>
+                    <p class="circle-text"></p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="circle" >
-              <div class="card">
-                <div class="card-body circle-inside d-flex flex-column">
-                  <span class="text-secondary fw-bold">0%</span>
-                  <h6 class="card-title">繳交作業率</h6>
-                </div>
-              </div>
+        </div>
+        <!-- 課程單元 -->
+        <div class="lesson list-group col-md-4 border border-2 border-dark overflow-auto" >
+          <div class="list-group-item  text-white bg-black p-0">
+            <div class="d-flex justify-content-around align-items-center">
+              <h5 class="mb-0 p-5">課程單元</h5>
+              <h7 class="text-success">課程已全部完成</h7>
             </div>
           </div>
-          <div class="col">
-            <div class="circle" >
-              <div class="card">
-                <div class="card-body circle-inside d-flex flex-column">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-secondary">
-                    <mask id="mask0_11348_4197" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                    <rect width="24" height="24" fill="currentColor"/>
-                    </mask>
-                    <g mask="url(#mask0_11348_4197)">
-                    <path d="M7.625 6.4L10.425 2.775C10.625 2.50833 10.8625 2.3125 11.1375 2.1875C11.4125 2.0625 11.7 2 12 2C12.3 2 12.5875 2.0625 12.8625 2.1875C13.1375 2.3125 13.375 2.50833 13.575 2.775L16.375 6.4L20.625 7.825C21.0583 7.95833 21.4 8.20417 21.65 8.5625C21.9 8.92083 22.025 9.31667 22.025 9.75C22.025 9.95 21.9958 10.15 21.9375 10.35C21.8792 10.55 21.7833 10.7417 21.65 10.925L18.9 14.825L19 18.925C19.0167 19.5083 18.825 20 18.425 20.4C18.025 20.8 17.5583 21 17.025 21C16.9917 21 16.8083 20.975 16.475 20.925L12 19.675L7.525 20.925C7.44167 20.9583 7.35 20.9792 7.25 20.9875C7.15 20.9958 7.05833 21 6.975 21C6.44167 21 5.975 20.8 5.575 20.4C5.175 20 4.98333 19.5083 5 18.925L5.1 14.8L2.375 10.925C2.24167 10.7417 2.14583 10.55 2.0875 10.35C2.02917 10.15 2 9.95 2 9.75C2 9.33333 2.12083 8.94583 2.3625 8.5875C2.60417 8.22917 2.94167 7.975 3.375 7.825L7.625 6.4Z" fill="currentColor"/>
-                    </g>
-                  </svg>                    
-                  <h6 class="card-title">課程評分</h6>
-                  <p class="circle-text"></p>
-                </div>
+          <div class="list-group-item border-0 rounded-2">
+            <div class="d-flex justify-content-between align-items-center">  
+              <div class="pt-2">  
+                <span class="fs-7">第1章</span>
+                <h6 class="py-5 mb-0 fs-5 fw-bold">零基礎如何拍出好照片</h6>
               </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="circle" >
-              <div class="card">
-                <div class="card-body circle-inside d-flex flex-column">
+              <span class="text-secondary">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-secondary">
                     <mask id="mask0_11219_4422" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
                     <rect width="24" height="24" fill="currentColor"/>
@@ -88,196 +122,164 @@
                     <path d="M9.52505 18L20.125 7.39999L18.7001 5.99999L9.50005 15.175L5.27505 10.925L3.85005 12.35L9.52505 18ZM9.52505 20.825L1.05005 12.35L5.27505 8.09999L9.52505 12.35L18.6751 3.17499L22.975 7.37499L9.52505 20.825Z" fill="currentColor"/>
                     </g>
                   </svg>
-                  <h6 class="card-title">完課證明</h6>
-                  <p class="circle-text"></p>
-                </div>
+              </span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">  
+              <div>  
+                <span class="fs-7">第2章</span>
+                <h6 class="py-5 mb-0 fs-5 fw-bold">零基礎如何拍出好照片</h6>
               </div>
+              <span class="text-secondary">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-secondary">
+                    <mask id="mask0_11219_4422" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                    <rect width="24" height="24" fill="currentColor"/>
+                    </mask>
+                    <g mask="url(#mask0_11219_4422)">
+                    <path d="M9.52505 18L20.125 7.39999L18.7001 5.99999L9.50005 15.175L5.27505 10.925L3.85005 12.35L9.52505 18ZM9.52505 20.825L1.05005 12.35L5.27505 8.09999L9.52505 12.35L18.6751 3.17499L22.975 7.37499L9.52505 20.825Z" fill="currentColor"/>
+                    </g>
+                  </svg>
+              </span>
+            </div> 
+            <div class="d-flex justify-content-between align-items-center">  
+              <div class="py-2">  
+                <span class="fs-7">第3章</span>
+                <h6 class="py-5 mb-0 fs-5 fw-bold">零基礎如何拍出好照片</h6>
+              </div>
+              <span class="text-secondary">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-secondary">
+                    <mask id="mask0_11219_4422" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                    <rect width="24" height="24" fill="currentColor"/>
+                    </mask>
+                    <g mask="url(#mask0_11219_4422)">
+                    <path d="M9.52505 18L20.125 7.39999L18.7001 5.99999L9.50005 15.175L5.27505 10.925L3.85005 12.35L9.52505 18ZM9.52505 20.825L1.05005 12.35L5.27505 8.09999L9.52505 12.35L18.6751 3.17499L22.975 7.37499L9.52505 20.825Z" fill="currentColor"/>
+                    </g>
+                  </svg>
+              </span>
             </div>
-          </div>
-
-          </div>
-        </div>   
-        <div class="lesson list-group col-md-4 border border-2  border-dark" >
-          <div class="list-group-item active bg-black p-0" aria-current="true">
-            <div class="d-flex justify-content-around align-items-center">
-              <h5 class="mb-0 p-3">課程單元</h5>
-              <h7 class="text-blue">課程已全部完成</h7>
+            <div class="d-flex justify-content-between align-items-center">  
+              <div>  
+                <span class="fs-7">第4章</span>
+                <h6 class="py-3 mb-0 fs-5 fw-bold">零基礎如何拍出好照片</h6>
+              </div>
+              <span class="text-secondary">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-secondary">
+                    <mask id="mask0_11219_4422" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                    <rect width="24" height="24" fill="currentColor"/>
+                    </mask>
+                    <g mask="url(#mask0_11219_4422)">
+                    <path d="M9.52505 18L20.125 7.39999L18.7001 5.99999L9.50005 15.175L5.27505 10.925L3.85005 12.35L9.52505 18ZM9.52505 20.825L1.05005 12.35L5.27505 8.09999L9.52505 12.35L18.6751 3.17499L22.975 7.37499L9.52505 20.825Z" fill="currentColor"/>
+                    </g>
+                  </svg>
+              </span>
             </div>
-          </div>
-            <div class="list-group-item rounded-2">
-                <div class="d-flex justify-content-between align-items-center">  
-                  <div class="pt-2">  
-                    <span class="fs-7">第1章</span>
-                   <h6 class="py-3 mb-0 fs-5 fw-bold">零基礎如何拍出好照片</h6>
-                  </div>
-                  <span class="text-secondary">
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-secondary">
-                        <mask id="mask0_11219_4422" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                        <rect width="24" height="24" fill="currentColor"/>
-                        </mask>
-                        <g mask="url(#mask0_11219_4422)">
-                        <path d="M9.52505 18L20.125 7.39999L18.7001 5.99999L9.50005 15.175L5.27505 10.925L3.85005 12.35L9.52505 18ZM9.52505 20.825L1.05005 12.35L5.27505 8.09999L9.52505 12.35L18.6751 3.17499L22.975 7.37499L9.52505 20.825Z" fill="currentColor"/>
-                        </g>
-                      </svg>
-                  </span>
-                </div>
-                <div class="d-flex justify-content-between align-items-center">  
-                  <div>  
-                    <span class="fs-7">第2章</span>
-                   <h6 class="py-3 mb-0 fs-5 fw-bold">零基礎如何拍出好照片</h6>
-                  </div>
-                  <span class="text-secondary">
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-secondary">
-                        <mask id="mask0_11219_4422" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                        <rect width="24" height="24" fill="currentColor"/>
-                        </mask>
-                        <g mask="url(#mask0_11219_4422)">
-                        <path d="M9.52505 18L20.125 7.39999L18.7001 5.99999L9.50005 15.175L5.27505 10.925L3.85005 12.35L9.52505 18ZM9.52505 20.825L1.05005 12.35L5.27505 8.09999L9.52505 12.35L18.6751 3.17499L22.975 7.37499L9.52505 20.825Z" fill="currentColor"/>
-                        </g>
-                      </svg>
-                  </span>
-                </div> 
-                <div class="d-flex justify-content-between align-items-center">  
-                  <div class="py-2">  
-                    <span class="fs-7">第3章</span>
-                   <h6 class="py-3 mb-0 fs-5 fw-bold">零基礎如何拍出好照片</h6>
-                  </div>
-                  <span class="text-secondary">
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-secondary">
-                        <mask id="mask0_11219_4422" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                        <rect width="24" height="24" fill="currentColor"/>
-                        </mask>
-                        <g mask="url(#mask0_11219_4422)">
-                        <path d="M9.52505 18L20.125 7.39999L18.7001 5.99999L9.50005 15.175L5.27505 10.925L3.85005 12.35L9.52505 18ZM9.52505 20.825L1.05005 12.35L5.27505 8.09999L9.52505 12.35L18.6751 3.17499L22.975 7.37499L9.52505 20.825Z" fill="currentColor"/>
-                        </g>
-                      </svg>
-                  </span>
-                </div>
-                <div class="d-flex justify-content-between align-items-center">  
-                  <div>  
-                    <span class="fs-7">第4章</span>
-                   <h6 class="py-3 mb-0 fs-5 fw-bold">零基礎如何拍出好照片</h6>
-                  </div>
-                  <span class="text-secondary">
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-secondary">
-                        <mask id="mask0_11219_4422" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                        <rect width="24" height="24" fill="currentColor"/>
-                        </mask>
-                        <g mask="url(#mask0_11219_4422)">
-                        <path d="M9.52505 18L20.125 7.39999L18.7001 5.99999L9.50005 15.175L5.27505 10.925L3.85005 12.35L9.52505 18ZM9.52505 20.825L1.05005 12.35L5.27505 8.09999L9.52505 12.35L18.6751 3.17499L22.975 7.37499L9.52505 20.825Z" fill="currentColor"/>
-                        </g>
-                      </svg>
-                  </span>
-                </div>
-                <div class="d-flex justify-content-between align-items-center">  
-                  <div>  
-                    <span class="fs-7">第5章</span>
-                   <h6 class="py-3 mb-0 fs-5 fw-bold">零基礎如何拍出好照片</h6>
-                  </div>
-                  <span class="text-secondary">
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-secondary">
-                        <mask id="mask0_11219_4422" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                        <rect width="24" height="24" fill="currentColor"/>
-                        </mask>
-                        <g mask="url(#mask0_11219_4422)">
-                        <path d="M9.52505 18L20.125 7.39999L18.7001 5.99999L9.50005 15.175L5.27505 10.925L3.85005 12.35L9.52505 18ZM9.52505 20.825L1.05005 12.35L5.27505 8.09999L9.52505 12.35L18.6751 3.17499L22.975 7.37499L9.52505 20.825Z" fill="currentColor"/>
-                        </g>
-                      </svg>
-                  </span>
-                </div>
-                <div class="d-flex justify-content-between align-items-center">  
-                  <div>  
-                    <span class="fs-7">第6章</span>
-                   <h6 class="py-3 mb-0 fs-5 fw-bold">零基礎如何拍出好照片</h6>
-                  </div>
-                  <span class="text-secondary">
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-secondary">
-                        <mask id="mask0_11219_4422" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                        <rect width="24" height="24" fill="currentColor"/>
-                        </mask>
-                        <g mask="url(#mask0_11219_4422)">
-                        <path d="M9.52505 18L20.125 7.39999L18.7001 5.99999L9.50005 15.175L5.27505 10.925L3.85005 12.35L9.52505 18ZM9.52505 20.825L1.05005 12.35L5.27505 8.09999L9.52505 12.35L18.6751 3.17499L22.975 7.37499L9.52505 20.825Z" fill="currentColor"/>
-                        </g>
-                      </svg>
-                  </span>
-                </div>
-                <div class="d-flex justify-content-between align-items-center">  
-                  <div>  
-                    <span class="fs-7">第7章</span>
-                    <h6 class="py-3 mb-0 fs-5 fw-bold">零基礎如何拍出好照片</h6>
-                  </div>
-                  <span class="text-secondary">
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-secondary">
-                        <mask id="mask0_11219_4422" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                        <rect width="24" height="24" fill="currentColor"/>
-                        </mask>
-                        <g mask="url(#mask0_11219_4422)">
-                        <path d="M9.52505 18L20.125 7.39999L18.7001 5.99999L9.50005 15.175L5.27505 10.925L3.85005 12.35L9.52505 18ZM9.52505 20.825L1.05005 12.35L5.27505 8.09999L9.52505 12.35L18.6751 3.17499L22.975 7.37499L9.52505 20.825Z" fill="currentColor"/>
-                        </g>
-                      </svg>
-                  </span>
+            <div class="d-flex justify-content-between align-items-center">  
+              <div>  
+                <span class="fs-7">第5章</span>
+                <h6 class="py-5 mb-0 fs-5 fw-bold">零基礎如何拍出好照片</h6>
+              </div>
+              <span class="text-secondary">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-secondary">
+                    <mask id="mask0_11219_4422" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                    <rect width="24" height="24" fill="currentColor"/>
+                    </mask>
+                    <g mask="url(#mask0_11219_4422)">
+                    <path d="M9.52505 18L20.125 7.39999L18.7001 5.99999L9.50005 15.175L5.27505 10.925L3.85005 12.35L9.52505 18ZM9.52505 20.825L1.05005 12.35L5.27505 8.09999L9.52505 12.35L18.6751 3.17499L22.975 7.37499L9.52505 20.825Z" fill="currentColor"/>
+                    </g>
+                  </svg>
+              </span>
             </div>
-          </div>
+            <div class="d-flex justify-content-between align-items-center">  
+              <div>  
+                <span class="fs-7">第6章</span>
+                <h6 class="py-5 mb-0 fs-5 fw-bold">零基礎如何拍出好照片</h6>
+              </div>
+              <span class="text-secondary">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-secondary">
+                    <mask id="mask0_11219_4422" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                    <rect width="24" height="24" fill="currentColor"/>
+                    </mask>
+                    <g mask="url(#mask0_11219_4422)">
+                    <path d="M9.52505 18L20.125 7.39999L18.7001 5.99999L9.50005 15.175L5.27505 10.925L3.85005 12.35L9.52505 18ZM9.52505 20.825L1.05005 12.35L5.27505 8.09999L9.52505 12.35L18.6751 3.17499L22.975 7.37499L9.52505 20.825Z" fill="currentColor"/>
+                    </g>
+                  </svg>
+              </span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">  
+              <div>  
+                <span class="fs-7">第7章</span>
+                <h6 class="py-5 mb-0 fs-5 fw-bold">零基礎如何拍出好照片</h6>
+              </div>
+              <span class="text-secondary">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-secondary">
+                    <mask id="mask0_11219_4422" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                    <rect width="24" height="24" fill="currentColor"/>
+                    </mask>
+                    <g mask="url(#mask0_11219_4422)">
+                    <path d="M9.52505 18L20.125 7.39999L18.7001 5.99999L9.50005 15.175L5.27505 10.925L3.85005 12.35L9.52505 18ZM9.52505 20.825L1.05005 12.35L5.27505 8.09999L9.52505 12.35L18.6751 3.17499L22.975 7.37499L9.52505 20.825Z" fill="currentColor"/>
+                    </g>
+                  </svg>
+              </span>
+            </div>
+          </div>  
         </div>
-    </div>      
- 
+      </div>      
     </div>  
     <div class="bg-gray-200 position: relative;">
       <div class="container sectionDown position: absolute;">
         <ul class="nav nav-pills" id="pills-tab" role="tablist">
           <li class="nav-item" role="presentation">
-            <button class="nav-link fs-5" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">問題討論</button>
+            <button class="nav-link fs-5 text-gray-60" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab">問題討論</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link  fs-5 active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">課程簡介</button>
+            <button class="nav-link  fs-5 active text-gray-60" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab">課程簡介</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link fs-5" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">課程評價</button>
+            <button class="nav-link fs-5 text-gray-60" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab">課程評價</button>
           </li>
         </ul>
         <div class="tab-content" id="pills-tabContent">
           <!-- 問題討論 -->
-          <div class="tab-pane border border-2 border-dark p-5 rounded-3" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="tab-pane border border-2 border-dark p-12 rounded-3" id="pills-home" role="tabpanel">
             <div class="text-center">
-            <div class="btn-group col-3 gap-4">
-              <button class="btn btn-lg border border-2 rounded fw-bold dropdown-toggle border-indigo" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-               全部單位
-              </button>
-              <button class="border-0 rounded-2 bg-purple fw-bold fs-6 col-lg-5 col-sm-10 text-nowrapap">
-                發表留言
-              </button>
-              <ul class="dropdown-menu text-center w-100">
-                <li><a href="#">第1章.第1單位</a></li>
-                <li><a href="#">第3章.第9單元</a></li>
-              </ul>
-            </div>
+              <div class="btn-group  col-3 gap-4 mx-auto">
+                <button class="btn border border-2 rounded fw-bold dropdown-toggle border-indigo" type="button" data-bs-toggle="dropdown" >
+                全部單位
+                </button>
+                <button class="border-0 rounded-2 bg-purple fw-bold fs-6 col-lg-5 col-sm-10 text-nowrap">
+                  發表留言
+                </button>
+                <ul class="dropdown-menu text-center w-100">
+                  <li><a href="#" class="text-gray-60">第1章.第1單位</a></li>
+                  <li><a href="#" class="text-gray-60">第3章.第9單元</a></li>
+                </ul>
+              </div>
             </div>
             <div class="d-flex justify-content-center align-items-center gap-3">
-            <input class="form-control py-2 w-50 mt-4 border border-1 border-indigo ms-5" type="text" placeholder="搜尋看看~您想問的問題" aria-label="default input example">
-            <button class="border-0 mt-3 fw-normal fs-6">日期排序</button>
+              <input class="form-control py-2 w-50 mt-4 border border-1 border-indigo ms-5" type="text" placeholder="搜尋看看~您想問的問題" aria-label="default input example">
+              <button class="border-0 mt-3 fw-normal fs-6">日期排序</button>
             </div>
             <div class="card-body pt-1">
               <span>解決中</span>
               <h4 class="card-title text-indigo fw-bold mt-2 mb-2">第1章,第2單元</h4>
               <p>拍攝的角度與姿勢</p>
               <div class="d-flex gap-2">
-              <p>孫學志</p>
-              <p>1個月</p> 
+                <p>孫學志</p>
+                <p>1個月</p> 
               </div>
-                <hr style="border: 1px solid black;">
+              <hr style="border: 1px solid black;">
             </div>
             <div class="card-body pt-1">
               <span>解決中</span>
               <h4 class="card-title text-indigo fw-bold mt-2 mb-2">第3章,第9單元</h4>
               <p>焦距.柔光的選擇</p>
               <div class="d-flex gap-2">
-              <p>蔣學金</p>
-              <p>2個月</p> 
+                <p>蔣學金</p>
+                <p>2個月</p> 
               </div>
-                  <hr style="border: 1px solid black;">
+              <hr style="border: 1px solid black;">
             </div>
             <div class="text-center">
-            <button class="moreinform border border-1 text-white bg-indigo fs-5 fw-bold p-2">載入更多討論</button>
+              <button class="moreinform border border-1 text-white bg-indigo fs-5 fw-bold p-2">載入更多討論</button>
             </div>
             <div class="message text-center position:relative" style="margin-bottom:-270px;">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -359,16 +361,16 @@
               </svg>
             </div>
             <div class="messagetitle position:relative" style="transform: translate(0, 10px); text-align: center;">
-              <p class="fs-4 fw-normal mb-5">參與互動討論.讓學習更生動</p>
-              <button class="border border-1 text-white bg-indigo fs-5 fw-bold p-2 mt-lg-5 mt-5">發表留言</button>
+              <p class="fs-4 fw-normal mb-12">參與互動討論.讓學習更生動</p>
+              <button class="border border-1 text-white bg-indigo fs-5 fw-bold p-2 mt-lg-12 mt-12">發表留言</button>
             </div>
           </div>
           <!-- 課程簡介 -->
-          <div class="tab-pane active border border-2 border-dark p-4 rounded-3" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <div class="tab-pane active border border-2 border-dark p-7 rounded-3" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
             <div class="card-body">
-              <h4 class="card-title text-primary-dark fw-bold border-2 border-bottom border-primary-dark pb-3 mb-4">課程單元</h4>
-              <ul class="d-flex justify-content-start ps-0 mt-2 mb-4" style="list-style-type:none;">
-                <li class="d-flex gap-3 me-4 ms-4">
+              <h4 class="card-title text-primary-dark fw-bold border-2 border-bottom border-primary-dark pb-5 mb-7">課程單元</h4>
+              <ul class="d-flex justify-content-start gap-5 ps-0 mt-2 mb-7" style="list-style-type:none;">
+                <li class="d-flex w-25">
                   <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect y="0.5" width="48" height="48" rx="8" fill="#F3E5D2"/>
                     <mask id="mask0_11359_11579" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="12" y="12" width="24" height="25">
@@ -378,12 +380,12 @@
                     <path d="M18 34.5C17.45 34.5 16.9792 34.3042 16.5875 33.9125C16.1958 33.5208 16 33.05 16 32.5V16.5C16 15.95 16.1958 15.4792 16.5875 15.0875C16.9792 14.6958 17.45 14.5 18 14.5H30C30.55 14.5 31.0208 14.6958 31.4125 15.0875C31.8042 15.4792 32 15.95 32 16.5V32.5C32 33.05 31.8042 33.5208 31.4125 33.9125C31.0208 34.3042 30.55 34.5 30 34.5H18ZM18 32.5H30V16.5H28V23.5L25.5 22L23 23.5V16.5H18V32.5Z" fill="#1E1E1E"/>
                     </g>
                   </svg>  
-                <div>
-                  <span>單元數</span>
-                  <h6 class="mb-0 fw-bold pt-2 text-nowrap">7章節30單元</h6>
-                </div>
-              </li>
-                <li class="d-flex gap-3 me-4 ms-4">
+                  <div class="ms-7">
+                    <span>單元數</span>
+                    <h6 class="mb-0 fw-bold pt-2 text-nowrap">7章節30單元</h6>
+                  </div>
+                </li>
+                <li class="d-flex w-25">
                   <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect y="0.5" width="48" height="48" rx="8" fill="#F3E5D2"/>
                     <mask id="mask0_11359_11579" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="12" y="12" width="24" height="25">
@@ -393,85 +395,81 @@
                     <path d="M18 34.5C17.45 34.5 16.9792 34.3042 16.5875 33.9125C16.1958 33.5208 16 33.05 16 32.5V16.5C16 15.95 16.1958 15.4792 16.5875 15.0875C16.9792 14.6958 17.45 14.5 18 14.5H30C30.55 14.5 31.0208 14.6958 31.4125 15.0875C31.8042 15.4792 32 15.95 32 16.5V32.5C32 33.05 31.8042 33.5208 31.4125 33.9125C31.0208 34.3042 30.55 34.5 30 34.5H18ZM18 32.5H30V16.5H28V23.5L25.5 22L23 23.5V16.5H18V32.5Z" fill="#1E1E1E"/>
                     </g>
                     </svg>
-                    
-                <div>
-                  <span>單元數</span>
-                  <h6 class="mb-0 fw-bold pt-2 text-nowrap">7章節30單元</h6>
-                </div>
-              </li>
-              <li class="d-flex gap-3 me-4 ms-4">
-                <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect y="0.5" width="48" height="48" rx="8" fill="#F3E5D2"/>
-                  <mask id="mask0_11359_11585" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="12" y="12" width="24" height="25">
-                  <rect x="12" y="12.5" width="24" height="24" fill="#D9D9D9"/>
-                  </mask>
-                  <g mask="url(#mask0_11359_11585)">
-                  <path d="M24 24.5C22.9 24.5 21.9583 24.1083 21.175 23.325C20.3917 22.5417 20 21.6 20 20.5C20 19.4 20.3917 18.4583 21.175 17.675C21.9583 16.8917 22.9 16.5 24 16.5C25.1 16.5 26.0417 16.8917 26.825 17.675C27.6083 18.4583 28 19.4 28 20.5C28 21.6 27.6083 22.5417 26.825 23.325C26.0417 24.1083 25.1 24.5 24 24.5ZM16 32.5V29.7C16 29.1333 16.1458 28.6125 16.4375 28.1375C16.7292 27.6625 17.1167 27.3 17.6 27.05C18.6333 26.5333 19.6833 26.1458 20.75 25.8875C21.8167 25.6292 22.9 25.5 24 25.5C25.1 25.5 26.1833 25.6292 27.25 25.8875C28.3167 26.1458 29.3667 26.5333 30.4 27.05C30.8833 27.3 31.2708 27.6625 31.5625 28.1375C31.8542 28.6125 32 29.1333 32 29.7V32.5H16Z" fill="#1E1E1E"/>
-                  </g>
-                  </svg> 
-              <div>
-                <span>課程總人數</span>
-                <h6 class="mb-0 fw-bold pt-2 text-nowrap">5000位同學</h6>
-              </div>
-            </li>
-            <li class="d-flex gap-3 ms-4 me-4">
-              <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect y="0.5" width="48" height="48" rx="8" fill="#F3E5D2"/>
-                <mask id="mask0_11359_11591" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="12" y="12" width="24" height="25">
-                <rect x="12" y="12.5" width="24" height="24" fill="#D9D9D9"/>
-                </mask>
-                <g mask="url(#mask0_11359_11591)">
-                <path d="M18 27.5H25L27 25.5H18V27.5ZM18 23.5H24V21.5H18V23.5ZM16 19.5V29.5H23L21 31.5H14V17.5H34V20.5H32V19.5H16ZM34.9 24.8C34.9833 24.8833 35.025 24.975 35.025 25.075C35.025 25.175 34.9833 25.2667 34.9 25.35L34 26.25L32.25 24.5L33.15 23.6C33.2333 23.5167 33.325 23.475 33.425 23.475C33.525 23.475 33.6167 23.5167 33.7 23.6L34.9 24.8ZM25 33.5V31.75L31.65 25.1L33.4 26.85L26.75 33.5H25Z" fill="#1E1E1E"/>
-                </g>
-                </svg>
-                            
-              <div>
-                <span>作業數</span>
-                <h6 class="mb-0 fw-bold pt-2 text-nowrap">3份作業</h6>
-              </div>
-            </li>
+                  <div class="ms-7">
+                    <span>單元數</span>
+                    <h6 class="mb-0 fw-bold pt-2 text-nowrap">7章節30單元</h6>
+                  </div>
+                </li>
+                <li class="d-flex w-25">
+                  <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="0.5" width="48" height="48" rx="8" fill="#F3E5D2"/>
+                    <mask id="mask0_11359_11585" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="12" y="12" width="24" height="25">
+                    <rect x="12" y="12.5" width="24" height="24" fill="#D9D9D9"/>
+                    </mask>
+                    <g mask="url(#mask0_11359_11585)">
+                    <path d="M24 24.5C22.9 24.5 21.9583 24.1083 21.175 23.325C20.3917 22.5417 20 21.6 20 20.5C20 19.4 20.3917 18.4583 21.175 17.675C21.9583 16.8917 22.9 16.5 24 16.5C25.1 16.5 26.0417 16.8917 26.825 17.675C27.6083 18.4583 28 19.4 28 20.5C28 21.6 27.6083 22.5417 26.825 23.325C26.0417 24.1083 25.1 24.5 24 24.5ZM16 32.5V29.7C16 29.1333 16.1458 28.6125 16.4375 28.1375C16.7292 27.6625 17.1167 27.3 17.6 27.05C18.6333 26.5333 19.6833 26.1458 20.75 25.8875C21.8167 25.6292 22.9 25.5 24 25.5C25.1 25.5 26.1833 25.6292 27.25 25.8875C28.3167 26.1458 29.3667 26.5333 30.4 27.05C30.8833 27.3 31.2708 27.6625 31.5625 28.1375C31.8542 28.6125 32 29.1333 32 29.7V32.5H16Z" fill="#1E1E1E"/>
+                    </g>
+                    </svg> 
+                  <div class="ms-7">
+                    <span>課程總人數</span>
+                    <h6 class="mb-0 fw-bold pt-2 text-nowrap">5000位同學</h6>
+                  </div>
+                </li>
+                <li class="d-flex w-25">
+                  <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="0.5" width="48" height="48" rx="8" fill="#F3E5D2"/>
+                    <mask id="mask0_11359_11591" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="12" y="12" width="24" height="25">
+                    <rect x="12" y="12.5" width="24" height="24" fill="#D9D9D9"/>
+                    </mask>
+                    <g mask="url(#mask0_11359_11591)">
+                    <path d="M18 27.5H25L27 25.5H18V27.5ZM18 23.5H24V21.5H18V23.5ZM16 19.5V29.5H23L21 31.5H14V17.5H34V20.5H32V19.5H16ZM34.9 24.8C34.9833 24.8833 35.025 24.975 35.025 25.075C35.025 25.175 34.9833 25.2667 34.9 25.35L34 26.25L32.25 24.5L33.15 23.6C33.2333 23.5167 33.325 23.475 33.425 23.475C33.525 23.475 33.6167 23.5167 33.7 23.6L34.9 24.8ZM25 33.5V31.75L31.65 25.1L33.4 26.85L26.75 33.5H25Z" fill="#1E1E1E"/>
+                    </g>
+                    </svg>
+                  <div class="ms-7">
+                    <span>作業數</span>
+                    <h6 class="mb-0 fw-bold pt-2 text-nowrap">3份作業</h6>
+                  </div>
+                </li>
               </ul>
-              <ul class="card-text fs-6 mt-2">
-                <li><p>觀看沒有期限.完成課程有完課證明！</p></li>
+              <ul class="card-text fs-6 ms-5 mt-9 mb-11">
+                <li class="mb-2"><p>觀看沒有期限.完成課程有完課證明！</p></li>
                 <li><p>直播課程有分組討論.請下載<code class="fs-6 text-decoration-underline">DC連結！</code></p></li>
               </ul>
             </div>
-
-              <div class="card-body mb-4">
-                <h4 class="card-title text-primary-dark fw-bold border-2 border-bottom border-primary-dark pb-3 mb-4">關於老師</h4>
-                <div class="aboutteacher d-flex justify-content-between ps-0 mt-2 mb-4" style="list-style-type:none;">
-                  <div class="d-flex gap-3">
-                    <img src="../assets/images/image 1.png">                        
-                    <div class="d-flex flex-column-reverse">
-                      <span>ESTJ</span>
-                      <h6 class="fw-bold">喬治與瑪莉 攝影工作室</h6>
-                    </div>
-                  </div>
-                  <div>
-                    <a href="#">                      
-                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.78002 1.57422C5.39912 1.57422 4.07475 2.12264 3.09812 3.0989C2.12148 4.07516 1.57255 5.39932 1.57202 6.78022V20.6682C1.57202 22.0495 2.12072 23.3741 3.09741 24.3508C4.0741 25.3275 5.39877 25.8762 6.78002 25.8762H20.668C22.0489 25.8757 23.3731 25.3268 24.3493 24.3501C25.3256 23.3735 25.874 22.0491 25.874 20.6682V6.78022C25.8735 5.39967 25.3248 4.07581 24.3486 3.09961C23.3724 2.12341 22.0486 1.57475 20.668 1.57422H6.78002ZM22.166 6.78822C22.166 7.18604 22.008 7.56757 21.7267 7.84888C21.4454 8.13018 21.0638 8.28822 20.666 8.28822C20.2682 8.28822 19.8867 8.13018 19.6054 7.84888C19.3241 7.56757 19.166 7.18604 19.166 6.78822C19.166 6.39039 19.3241 6.00886 19.6054 5.72756C19.8867 5.44625 20.2682 5.28822 20.666 5.28822C21.0638 5.28822 21.4454 5.44625 21.7267 5.72756C22.008 6.00886 22.166 6.39039 22.166 6.78822ZM13.726 9.56422C12.6227 9.56422 11.5646 10.0025 10.7845 10.7827C10.0043 11.5628 9.56602 12.6209 9.56602 13.7242C9.56602 14.8275 10.0043 15.8856 10.7845 16.6658C11.5646 17.4459 12.6227 17.8842 13.726 17.8842C14.8293 17.8842 15.8874 17.4459 16.6676 16.6658C17.4477 15.8856 17.886 14.8275 17.886 13.7242C17.886 12.6209 17.4477 11.5628 16.6676 10.7827C15.8874 10.0025 14.8293 9.56422 13.726 9.56422ZM7.56402 13.7242C7.56402 12.0905 8.21302 10.5237 9.36824 9.36844C10.5235 8.21322 12.0903 7.56422 13.724 7.56422C15.3578 7.56422 16.9246 8.21322 18.0798 9.36844C19.235 10.5237 19.884 12.0905 19.884 13.7242C19.884 15.358 19.235 16.9248 18.0798 18.08C16.9246 19.2352 15.3578 19.8842 13.724 19.8842C12.0903 19.8842 10.5235 19.2352 9.36824 18.08C8.21302 16.9248 7.56402 15.358 7.56402 13.7242Z" fill="#17AB7A"/>
-                        </svg>                         
-                    </a>
-                    <a href="#" class="ms-4 me-1">                
-                      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22.8 0.400391H3.20002C1.66002 0.400391 0.400024 1.66039 0.400024 3.20039V22.8004C0.400024 24.3418 1.66002 25.6004 3.20002 25.6004H13V15.8004H10.2V12.3354H13V9.46539C13 6.43579 14.6968 4.30779 18.2724 4.30779L20.7966 4.31059V7.95759H19.1208C17.7292 7.95759 17.2 9.00199 17.2 9.97079V12.3368H20.7952L20 15.8004H17.2V25.6004H22.8C24.34 25.6004 25.6 24.3418 25.6 22.8004V3.20039C25.6 1.66039 24.34 0.400391 22.8 0.400391Z" fill="#17AB7A"/>
-                        </svg>                        
-                    </a>
+            <div class="card-body mb-4">
+              <h4 class="card-title text-primary-dark fw-bold border-2 border-bottom border-primary-dark pb-3 mb-4">關於老師</h4>
+              <div class="aboutteacher d-flex justify-content-between align-items-center ps-0 mt-2 mb-4" style="list-style-type:none;">
+                <div class="d-flex gap-5">
+                  <img src="/assets/images/photo-2.png" class="photomary-img">                        
+                  <div class="d-flex flex-column-reverse">
+                    <span>ESTJ</span>
+                    <h6 class="fw-bold">喬治與瑪莉 攝影工作室</h6>
                   </div>
                 </div>
-                <p class="card-text fs-6 fw-normal">喬治與瑪莉攝影工作室,由「喬治」+「瑪莉」兩位專業攝影師組成。我們接觸攝影15年,有多年商業攝影經歷,並長期在IG、FB上連載《1分鐘攝影小教室》,廣受熱烈回應。我們擅長把枯燥的攝影知識,輕鬆有趣的課程！</p>
+                <div>
+                  <a href="#">                      
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M6.78002 1.57422C5.39912 1.57422 4.07475 2.12264 3.09812 3.0989C2.12148 4.07516 1.57255 5.39932 1.57202 6.78022V20.6682C1.57202 22.0495 2.12072 23.3741 3.09741 24.3508C4.0741 25.3275 5.39877 25.8762 6.78002 25.8762H20.668C22.0489 25.8757 23.3731 25.3268 24.3493 24.3501C25.3256 23.3735 25.874 22.0491 25.874 20.6682V6.78022C25.8735 5.39967 25.3248 4.07581 24.3486 3.09961C23.3724 2.12341 22.0486 1.57475 20.668 1.57422H6.78002ZM22.166 6.78822C22.166 7.18604 22.008 7.56757 21.7267 7.84888C21.4454 8.13018 21.0638 8.28822 20.666 8.28822C20.2682 8.28822 19.8867 8.13018 19.6054 7.84888C19.3241 7.56757 19.166 7.18604 19.166 6.78822C19.166 6.39039 19.3241 6.00886 19.6054 5.72756C19.8867 5.44625 20.2682 5.28822 20.666 5.28822C21.0638 5.28822 21.4454 5.44625 21.7267 5.72756C22.008 6.00886 22.166 6.39039 22.166 6.78822ZM13.726 9.56422C12.6227 9.56422 11.5646 10.0025 10.7845 10.7827C10.0043 11.5628 9.56602 12.6209 9.56602 13.7242C9.56602 14.8275 10.0043 15.8856 10.7845 16.6658C11.5646 17.4459 12.6227 17.8842 13.726 17.8842C14.8293 17.8842 15.8874 17.4459 16.6676 16.6658C17.4477 15.8856 17.886 14.8275 17.886 13.7242C17.886 12.6209 17.4477 11.5628 16.6676 10.7827C15.8874 10.0025 14.8293 9.56422 13.726 9.56422ZM7.56402 13.7242C7.56402 12.0905 8.21302 10.5237 9.36824 9.36844C10.5235 8.21322 12.0903 7.56422 13.724 7.56422C15.3578 7.56422 16.9246 8.21322 18.0798 9.36844C19.235 10.5237 19.884 12.0905 19.884 13.7242C19.884 15.358 19.235 16.9248 18.0798 18.08C16.9246 19.2352 15.3578 19.8842 13.724 19.8842C12.0903 19.8842 10.5235 19.2352 9.36824 18.08C8.21302 16.9248 7.56402 15.358 7.56402 13.7242Z" fill="#17AB7A"/>
+                      </svg>                         
+                  </a>
+                  <a href="#" class="ms-4 me-1">                
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M22.8 0.400391H3.20002C1.66002 0.400391 0.400024 1.66039 0.400024 3.20039V22.8004C0.400024 24.3418 1.66002 25.6004 3.20002 25.6004H13V15.8004H10.2V12.3354H13V9.46539C13 6.43579 14.6968 4.30779 18.2724 4.30779L20.7966 4.31059V7.95759H19.1208C17.7292 7.95759 17.2 9.00199 17.2 9.97079V12.3368H20.7952L20 15.8004H17.2V25.6004H22.8C24.34 25.6004 25.6 24.3418 25.6 22.8004V3.20039C25.6 1.66039 24.34 0.400391 22.8 0.400391Z" fill="#17AB7A"/>
+                    </svg>                        
+                  </a>
+                </div>
               </div>
-
-              <div class="card-body pt-3">
-                <h4 class="card-title text-primary-dark fw-bold border-2 border-bottom border-primary-dark pb-3 mb-4">可以學到</h4>
-                <ol class="card-text fs-6 fw-normal">
-                  <li><p>自己拍好美食&商品</p></li>
-                  <li><p>不花大錢,靠手機拍出實用照片用於社群.行銷.設計...</pp></li>
-                  <li><p>學到全面的攝影能力(打光/構圖/情境/調色)</p></li>
-                  <li><p>學會攝影大通則,未來都能用</p></li>
-                </ol>
-              </div>
+              <p class="card-text fs-6 fw-normal">喬治與瑪莉攝影工作室,由「喬治」+「瑪莉」兩位專業攝影師組成。我們接觸攝影15年,有多年商業攝影經歷,並長期在IG、FB上連載《1分鐘攝影小教室》,廣受熱烈回應。我們擅長把枯燥的攝影知識,輕鬆有趣的課程！</p>
+            </div>
+            <div class="card-body pt-3">
+              <h4 class="card-title text-primary-dark fw-bold border-2 border-bottom border-primary-dark pb-3 mb-4">可以學到</h4>
+              <ol class="card-text fs-6 fw-normal ms-5 pt-2">
+                <li class="mb-2"><p>自己拍好美食&商品</p></li>
+                <li class="mb-2"><p>不花大錢,靠手機拍出實用照片用於社群.行銷.設計...</pp></li>
+                <li class="mb-2"><p>學到全面的攝影能力(打光/構圖/情境/調色)</p></li>
+                <li><p>學會攝影大通則,未來都能用</p></li>
+              </ol>
+            </div>
           </div>
           <!-- 課程評價 -->
           <div class="tab-pane border border-2 border-dark p-4 rounded-3" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
@@ -487,7 +485,7 @@
               <div class="d-flex justify-content-between ps-0 mt-2 mb-4" style="list-style-type:none;">
                 <div class="mx-2">
                  <div class="text-center">
-                  <img src="../assets/images/image 1.png">                        
+                  <img src="/assets/images/photo-1.png" class="photomary-img">                        
                     <div class="d-flex flex-column mt-2">
                       <h7 class="fs-7 text-nowrap">蔣學金</h7>
                       <time>2024.7.24</time>
