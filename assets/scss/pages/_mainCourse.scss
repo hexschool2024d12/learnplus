@@ -1,0 +1,119 @@
+.bgdownImg{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 900px;
+  position: relative;
+}
+.content {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; 
+  z-index: 1; 
+  display: flex; 
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: center; 
+}
+@media (max-width: 992px) {
+  .sectionTop{
+    flex-wrap: wrap;    
+  .classinform{
+    flex-direction: column-reverse;
+  }
+}
+}
+@media (max-width: 992px) {
+  .row{
+    width:90%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .row{
+    width:80%;  
+    margin: 0 auto;
+    .col{
+      padding: 0;
+      margin: 12px;
+  }
+}
+}
+@media (max-width: 992px) {
+  .lesson{
+    width: 90%;
+  }
+}
+
+.col{
+  flex: 0;
+  width: 152px;
+  height: 152px;
+  padding: 0;
+  margin: 40px 0  0 0;
+}
+
+.sectionDown{
+  margin-top: 80px;
+  margin-bottom: 120px;
+}
+.bg-gray-200 {
+  width: 100%;
+  height: 100vh; 
+  margin-top: 80px;
+}
+
+@media (max-width: 992px) {
+  .card-body ul{
+    flex-direction: column;
+    li{
+      margin-bottom: 16px;
+    }
+  }
+  .card-body{
+    .aboutteacher{
+    flex-direction: column;
+    img{
+      margin-bottom: 8px;
+    }
+  }
+}
+}
+@media (min-width: 400px) {
+.bg-gray-200 {
+  min-height: auto; /* 取消固定高度 */
+  height: auto; /* 自動調整高度 */
+}
+}
+
+
+@media (max-width: 998px) {
+.message{
+  transform: translate(0, -120px); text-align: center;
+  svg{
+    opacity:0;
+  }
+}
+.messagetitle p{ 
+  display: none;
+}
+.messagetitle button{
+  display: none;
+}
+}
+@media (max-width: 768px) {
+.messagetitle button{
+  transform: translate(0px, 10px);
+}
+}
+@media (max-width: 500px){
+.messagetitle button{
+  display: none;
+}
+.moreinform{
+  transform: translate(0px, -50px);
+}
+}
