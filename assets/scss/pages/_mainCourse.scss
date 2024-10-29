@@ -1,6 +1,3 @@
-.container{
-  width: 1076px;
-}
 .topNavigation{
 margin-top: 64px;
 margin-bottom: 24px;
@@ -14,7 +11,7 @@ margin-bottom: 24px;
 }
 @media (max-width: 576px) {
   .bgdownImg{
-  width: 1072px;
+  max-width: 1072px;
 }
 }
 .content {
@@ -38,27 +35,27 @@ margin-bottom: 24px;
 }
 }
 @media (max-width: 992px) {
-  .row{
+  .row-circle{
     width:90%;
     margin: 0 auto;
   }
 }
 
 @media (max-width: 768px) {
-  .row{
+  .row-circle{
     width:80%;  
     margin: 0 auto;
-    .col{
+    .col-circle{
       padding: 0;
       margin: 12px;
   }
 }
 }
 @media (max-width: 576px) {
-  .row{
+  .row-circle{
     width:50%;  
     margin: 0 auto;
-    .col{
+    .col-circle{
       padding: 0;
       margin: 12px;
   }
@@ -70,7 +67,7 @@ margin-bottom: 24px;
   }
 }
 
-.col{
+.col-circle{
   flex: 0;
   width: 152px;
   height: 152px;

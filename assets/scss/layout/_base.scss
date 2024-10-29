@@ -39,3 +39,8 @@ ol,ul{
         @content;
     }
 }
+@mixin xxxl {
+    @media (min-width:1600px) {
+        @content;
+    }
+}

@@ -1,7 +1,7 @@
 .logo{
   max-width: 70px;
 }
-@include xxl{
+@include xxxl{
   .logo{
     max-width: 100%;
   }
@@ -9,12 +9,12 @@
 .nav-width{
   width: 100% !important;
 }
-@include xxl{
+@include xxxl{
   .nav-width{
     width: 248px !important;
   }
 }
-@include xxl{
+@include xxxl{
   .nav-border{
     border: 2px solid $gray-80;
     border-radius: 8px;
@@ -33,7 +33,7 @@
   top: 0;
 }
 
-@include xxl{
+@include xxxl{
   .nav-position{
     top: 64px;
     left: 32px;
