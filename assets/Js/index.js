@@ -1,7 +1,7 @@
 //clockIN
 const clockIN = document.querySelector('.clockIN');
 clockIN.addEventListener("click",function(e){
-    clockIN.setAttribute("src","../assets/images/sign-in-done.png");
+    clockIN.setAttribute("src","https://firebasestorage.googleapis.com/v0/b/cafeshop-d4c16.appspot.com/o/sign-in-done.png?alt=media&token=da8196e0-1e76-4ba2-ab4d-7c80bbdfa261");
 })
 
 //signIN
