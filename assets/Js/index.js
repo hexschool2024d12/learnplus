@@ -1,7 +1,7 @@
 //clockIN
 const clockIN = document.querySelector('.clockIN');
 clockIN.addEventListener("click",function(e){
-    clockIN.setAttribute("src","/assets/images/sign-in-done.png");
+    clockIN.setAttribute("src","../assets/images/sign-in-done.png");
 })
 
 //signIN
