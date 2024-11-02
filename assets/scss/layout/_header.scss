@@ -11,7 +11,7 @@
 }
 @include xxxl{
   .nav-width{
-    width: 248px !important;
+    width: 250px !important;
   }
 }
 @include xxxl{
@@ -28,6 +28,11 @@
     border-top: 2px solid $gray-80;
   }
 }
+.nav-hover{
+  &:hover{
+    border-right: 2px solid $gray-80;
+  }
+}
 .nav-position{
   position: fixed;
   top: 0;
@@ -37,5 +42,22 @@
   .nav-position{
     top: 64px;
     left: 32px;
+  }
+}
+
+//signIn-btn
+.border-end-dark{
+  border-right: 2px solid $gray-80;
+}
+.radius-bottom-l{
+  border-bottom-left-radius: 8px !important;
+}
+
+.radius-bottom-r{
+  border-bottom-right-radius: 8px !important;
+}
+.li-hover{
+  &:hover{
+    color: $primary-dark;
   }
 }
